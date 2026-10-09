@@ -1722,6 +1722,414 @@ ul.plain li {
   }
 }
 
+/* =========================================
+   FITNESS & 8-WEEK RECOMPOSITION SECTION
+   ========================================= */
+.fitness-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.fitness-hero {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fitness-hero-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.fitness-hero-head h2 {
+  font-size: 1.75rem;
+  margin: 0;
+  color: var(--fg);
+}
+
+.recomp-badge {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  background: var(--body-bg);
+  color: var(--body);
+  border: 1px solid var(--body);
+  padding: 4px 10px;
+  border-radius: var(--radius-pill);
+}
+
+.fitness-profile-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+}
+
+.profile-chip {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.profile-chip .k {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.profile-chip .v {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--fg);
+}
+
+.daily-targets-banner {
+  background: var(--surface-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.target-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.target-stat .tk {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.target-stat .tv {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.target-stat .tsub {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* 8-Week Sunday Audit Table */
+.audit-panel {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.audit-panel-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.audit-panel-head h3 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.audit-summary-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+}
+
+.summary-metric-pill {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--fg);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.summary-metric-pill b {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.audit-table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
+  padding: 12px;
+}
+
+.audit-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  text-align: left;
+  min-width: 820px;
+}
+
+.audit-table th {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--muted);
+  background: var(--surface-raised);
+  padding: 10px 12px;
+  border-bottom: 2px solid var(--line);
+  white-space: nowrap;
+}
+
+.audit-table th.primary-metric {
+  color: var(--body);
+  background: var(--body-bg);
+}
+
+.audit-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--line-subtle);
+  vertical-align: middle;
+}
+
+.audit-table tr:hover td {
+  background: var(--surface-hover);
+}
+
+.audit-table tr.baseline-row td {
+  background: rgba(12, 98, 87, 0.04);
+}
+
+.audit-table input[type="text"],
+.audit-table input[type="number"] {
+  font: inherit;
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  padding: 6px 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--bg);
+  color: var(--fg);
+  width: 100%;
+  min-width: 65px;
+  transition: border-color 0.15s ease;
+}
+
+.audit-table input:focus {
+  border-color: var(--accent);
+  outline: none;
+}
+
+.audit-table .photo-btn {
+  font: inherit;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--muted);
+  border-radius: var(--radius-sm);
+  padding: 5px 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+.audit-table .photo-btn.logged {
+  background: var(--body-bg);
+  border-color: var(--body);
+  color: var(--body);
+}
+
+/* Workout Routines & Split Tab Styles */
+.workout-section {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.workout-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  border-bottom: 1px solid var(--line-subtle);
+  padding-bottom: 10px;
+}
+
+.workout-tab-btn {
+  font: inherit;
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--muted);
+  padding: 7px 14px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.workout-tab-btn:hover {
+  color: var(--fg);
+  background: var(--surface-hover);
+}
+
+.workout-tab-btn.active {
+  background: var(--accent);
+  color: var(--accent-fg);
+  border-color: var(--accent);
+}
+
+.workout-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px;
+}
+
+.exercise-item {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  position: relative;
+  transition: border-color 0.15s ease;
+}
+
+.exercise-item:hover {
+  border-color: var(--muted);
+}
+
+.exercise-item-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.exercise-name {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--fg);
+}
+
+.exercise-sets {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--body);
+  background: var(--body-bg);
+  padding: 2px 7px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.exercise-cue {
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+/* Diet Plan Grid */
+.diet-section {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.diet-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+
+.meal-card {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.meal-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--line-subtle);
+  padding-bottom: 8px;
+}
+
+.meal-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--fg);
+}
+
+.meal-protein {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--success);
+  background: var(--success-bg);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.meal-desc {
+  font-size: 0.86rem;
+  color: var(--fg);
+  line-height: 1.45;
+}
+
+.meal-note {
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-top: auto;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .bar i { transition: none; }
 }
@@ -1764,10 +2172,10 @@ ul.plain li {
         <b>$2,000 cash</b>
       </div>
       <div class="goal-pill">
-        <span>Body Target:</span>
-        <b>70 &rarr; 66 kg</b>
+        <span>Recomp Target:</span>
+        <b>76 kg &middot; Waist Down</b>
         <span class="sep">&middot;</span>
-        <span>by Jan 9</span>
+        <span>8-Wk Plan</span>
       </div>
     </div>
   </header>
@@ -1783,6 +2191,10 @@ ul.plain li {
     <button type="button" class="nav-tab" data-view="deliverables">
       <span>Deliverables Stack</span>
       <span class="badge" id="stackCountBadge">0 Wins</span>
+    </button>
+    <button type="button" class="nav-tab" data-view="fitness">
+      <span>Fitness &amp; Recomp</span>
+      <span class="badge" style="background:var(--body-bg);color:var(--body);font-weight:600;">8 Weeks</span>
     </button>
     <button type="button" class="nav-tab" data-view="plan">
       <span>Sprint Roadmap</span>
@@ -1895,8 +2307,222 @@ ul.plain li {
     </div>
   </section>
 
-  <!-- SECTION 4: STRATEGIC PLAN & ROADMAP -->
-  <section class="app-section" id="sec-plan" aria-label="Sprint Roadmap">
+  <!-- SECTION 4: FITNESS & 8-WEEK BODY RECOMPOSITION PLAN -->
+  <section class="app-section is-hidden" id="sec-fitness" aria-label="Fitness 8-Week Recomp Plan and Audit">
+    <div class="fitness-wrap">
+      
+      <!-- Fitness Hero & Profile Banner -->
+      <div class="fitness-hero">
+        <div class="fitness-hero-head">
+          <div>
+            <h2>Fitness &amp; Body Recomposition &middot; 8-Week Plan</h2>
+            <p style="color:var(--muted);font-size:0.9rem;margin:4px 0 0;">
+              Primary Goal: Reduce body fat while building/maintaining muscle. Non-scale priority: waist reduction, muscle definition, strength, stamina, and a leaner face.
+            </p>
+          </div>
+          <span class="recomp-badge">Phase 1 &rarr; Phase 2 (8 Weeks)</span>
+        </div>
+
+        <div class="fitness-profile-grid">
+          <div class="profile-chip">
+            <span class="k">Starting Profile</span>
+            <span class="v">Age 21 &middot; 170 cm &middot; 76 kg</span>
+          </div>
+          <div class="profile-chip">
+            <span class="k">Training Experience</span>
+            <span class="v">Beginner / Untrained</span>
+          </div>
+          <div class="profile-chip">
+            <span class="k">Equipment Available</span>
+            <span class="v">2 &times; 4 kg + 2 &times; 2.5 kg DBs</span>
+          </div>
+          <div class="profile-chip">
+            <span class="k">Diet &amp; Protein</span>
+            <span class="v">100% Vegetarian (Whole Foods)</span>
+          </div>
+          <div class="profile-chip">
+            <span class="k">Daily Time Commitment</span>
+            <span class="v">~1 Hour / Day</span>
+          </div>
+        </div>
+
+        <div class="daily-targets-banner">
+          <div class="target-stat">
+            <span class="tk">Daily Calories</span>
+            <span class="tv">1,750–1,850</span>
+            <span class="tsub">Controlled deficit</span>
+          </div>
+          <div class="target-stat">
+            <span class="tk">Daily Protein</span>
+            <span class="tv" style="color:var(--body);">100–110 g</span>
+            <span class="tsub">Soy, dahi, dal, chana</span>
+          </div>
+          <div class="target-stat">
+            <span class="tk">Daily Water</span>
+            <span class="tv">2.5–3.0 L</span>
+            <span class="tsub">Steady hydration</span>
+          </div>
+          <div class="target-stat">
+            <span class="tk">Daily Steps</span>
+            <span class="tv">8k–10k</span>
+            <span class="tsub">Walk-in afternoons</span>
+          </div>
+          <div class="target-stat">
+            <span class="tk">Sleep Target</span>
+            <span class="tv">7–9 hrs</span>
+            <span class="tsub">Crucial for recovery</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weekly Sunday Measurement & Recomposition Audit Table -->
+      <div class="audit-panel">
+        <div class="audit-panel-head">
+          <div>
+            <h3>Weekly Sunday Measurement &amp; Recomposition Audit</h3>
+            <p style="color:var(--muted);font-size:0.86rem;margin:3px 0 0;">
+              Audit every Sunday morning in the exact same fasted conditions and lighting. Waist at navel is your #1 indicator of true fat loss.
+            </p>
+          </div>
+        </div>
+
+        <div class="audit-summary-strip">
+          <div class="summary-metric-pill">
+            <span>Waist Trajectory:</span>
+            <span id="recompWaistSummary"><b>Log Baseline</b></span>
+          </div>
+          <div class="summary-metric-pill">
+            <span>Weight Trajectory:</span>
+            <span id="recompWeightSummary">76 kg &rarr; <b>76 kg</b></span>
+          </div>
+          <div class="summary-metric-pill">
+            <span>Progress Photos:</span>
+            <span id="recompPhotosSummary"><b>0 / 8 weeks</b></span>
+          </div>
+        </div>
+
+        <div class="audit-table-wrap">
+          <table class="audit-table">
+            <thead>
+              <tr>
+                <th>Week &amp; Date</th>
+                <th>Weight (kg)</th>
+                <th class="primary-metric">Waist @ Navel (cm) &star;</th>
+                <th>Chest (cm)</th>
+                <th>Arm (cm)</th>
+                <th>Thigh (cm)</th>
+                <th>Photos (F/S/B)</th>
+                <th>Recomp Notes &amp; Observations</th>
+              </tr>
+            </thead>
+            <tbody id="fitnessAuditBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Training Split & Interactive Workout Routines -->
+      <div class="workout-section">
+        <div class="fitness-hero-head">
+          <div>
+            <h3>Workout Routines &amp; Exercise Library</h3>
+            <p style="color:var(--muted);font-size:0.86rem;margin:3px 0 0;">
+              Full routines tailored for 2 &times; 4 kg and 2 &times; 2.5 kg dumbbells. Focus on 2–3s slow negatives, pauses, and unilateral form.
+            </p>
+          </div>
+        </div>
+
+        <div class="workout-tabs" role="tablist">
+          <button type="button" class="workout-tab-btn active" data-wtab="push">Push Routine</button>
+          <button type="button" class="workout-tab-btn" data-wtab="pull">Pull Routine</button>
+          <button type="button" class="workout-tab-btn" data-wtab="legs">Legs + Abs Routine</button>
+          <button type="button" class="workout-tab-btn" data-wtab="cond">Saturday Conditioning</button>
+          <button type="button" class="workout-tab-btn" data-wtab="phase1">Weeks 1–2 (Full Body)</button>
+          <button type="button" class="workout-tab-btn" data-wtab="running">Running Ladder</button>
+        </div>
+
+        <div id="workoutContent"></div>
+      </div>
+
+      <!-- Vegetarian High-Protein Meal Plan -->
+      <div class="diet-section">
+        <div class="fitness-hero-head">
+          <div>
+            <h3>Vegetarian High-Protein Meal Plan (100–110g Protein &middot; 1,800 kcal)</h3>
+            <p style="color:var(--muted);font-size:0.86rem;margin:3px 0 0;">
+              Built entirely around affordable Indian whole foods. Zero protein powder required. Limit added cooking oil to 3–4 tsp/day.
+            </p>
+          </div>
+          <span class="recomp-badge" style="background:var(--success-bg);color:var(--success);border-color:var(--success);">3–4 tsp Oil / Day</span>
+        </div>
+
+        <div class="diet-cards-grid">
+          <div class="meal-card">
+            <div class="meal-card-head">
+              <span class="meal-title">Breakfast (9:00 AM)</span>
+              <span class="meal-protein">~22g Protein</span>
+            </div>
+            <div class="meal-desc">
+              <b>Option A:</b> Oats + 250ml milk + 1 banana + 30g roasted chana.<br>
+              <b>Option B:</b> 200g Amul dahi + oats + seasonal fruit + small handful of almonds.
+            </div>
+            <span class="meal-note">~410 kcal &middot; Sustained energy for morning audit work</span>
+          </div>
+
+          <div class="meal-card">
+            <div class="meal-card-head">
+              <span class="meal-title">Lunch (1:00 PM)</span>
+              <span class="meal-protein">~44g Protein</span>
+            </div>
+            <div class="meal-desc">
+              2 whole wheat rotis + 1 bowl dal + <b>50g dry soy chunks</b> (boiled &amp; cooked with sabzi) + green salad + <b>200–250g Amul dahi</b>.
+            </div>
+            <span class="meal-note">~620 kcal &middot; High satiety before afternoon walk-ins</span>
+          </div>
+
+          <div class="meal-card">
+            <div class="meal-card-head">
+              <span class="meal-title">Snack (5:30 PM)</span>
+              <span class="meal-protein">~11g Protein</span>
+            </div>
+            <div class="meal-desc">
+              40–50g roasted chana + 1 seasonal fruit (banana, apple, or guava). Carry in bag during walk-ins to avoid street food temptation.
+            </div>
+            <span class="meal-note">~210 kcal &middot; Portable &middot; Clean energy</span>
+          </div>
+
+          <div class="meal-card">
+            <div class="meal-card-head">
+              <span class="meal-title">Dinner (8:00 PM)</span>
+              <span class="meal-protein">~38g Protein</span>
+            </div>
+            <div class="meal-desc">
+              <b>50–60g dry soy chunks</b> OR 150g firm tofu + 2 rotis (or moderate rice) + cooked sabzi + <b>100–150g Amul dahi</b>.
+            </div>
+            <span class="meal-note">~540 kcal &middot; Optimal overnight muscle protein synthesis</span>
+          </div>
+        </div>
+
+        <div class="detail" style="margin-top:4px;">
+          <span class="nt">Diet Rules</span>
+          <span>1 flexible meal per week allowed (never an entire cheat day). If a meal goes off track, return immediately on the next meal.</span>
+        </div>
+      </div>
+
+      <!-- Success Criteria & Recomposition Mindset -->
+      <div class="audit-panel">
+        <h3>8-Week Recomposition Mindset &amp; Success Criteria</h3>
+        <ul class="plain" style="margin-top:8px;">
+          <li><b>Do NOT judge progress only by scale weight:</b> Muscle has density. If your weight stays at 74–76 kg while your waist shrinks 4 cm and arms grow, you have replaced fat with muscle.</li>
+          <li><b>Primary indicators:</b> Waist at navel decreasing, strength/reps increasing, clearer muscle definition in shoulders/chest, improved stamina on runs, leaner face.</li>
+          <li><b>Consistency &gt; Perfection:</b> Never compensate for a missed workout by starving yourself or doing punishment cardio. Stick to the 8-week horizon.</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SECTION 5: STRATEGIC PLAN & ROADMAP -->
+  <section class="app-section id="sec-plan" aria-label="Sprint Roadmap">
     <section class="plan">
       <div>
         <h2>Road to $2,000</h2>
@@ -1997,6 +2623,7 @@ ul.plain li {
       schedule: document.getElementById("sec-schedule"),
       dashboard: document.getElementById("sec-dashboard"),
       deliverables: document.getElementById("sec-deliverables"),
+      fitness: document.getElementById("sec-fitness"),
       plan: document.getElementById("sec-plan")
     };
     if (view === "all") {
@@ -2849,12 +3476,224 @@ ul.plain li {
     };
   }
 
+  /* =========================================
+     FITNESS & RECOMPOSITION WORKOUT DATA & AUDIT
+     ========================================= */
+  var WORKOUT_DATA = {
+    push: {
+      title: "Push Routine (Chest, Delts, Triceps)",
+      desc: "Target: 2–3s eccentric lowering on every rep. Push until 1–2 reps in reserve.",
+      exercises: [
+        { name: "Push-ups", sets: "4 × 8–20", cue: "Full range of motion. Chest touches floor, locked out at top. Core braced." },
+        { name: "Dumbbell Floor Press", sets: "4 × 12–20", cue: "Slow descent until triceps kiss the floor. Explode up and squeeze chest." },
+        { name: "Dumbbell Floor Fly", sets: "3 × 12–20", cue: "Slight elbow bend. Feel the deep stretch at the bottom without hyperextending." },
+        { name: "Dumbbell Shoulder Press", sets: "4 × 10–15", cue: "Seated or standing tall. Strict press without using leg bounce." },
+        { name: "Lateral Raises", sets: "4 × 15–25", cue: "Lead with elbows. 1 sec pause at shoulder height. Targets side delts." },
+        { name: "Rear-Delt Raises", sets: "3 × 15–25", cue: "Hinged at 45°. Squeeze rear delts and upper back. Essential for posture." },
+        { name: "Overhead Triceps Extension", sets: "3 × 12–20", cue: "Keep elbows tucked in. Full deep stretch behind the neck." },
+        { name: "Close-Grip Push-ups", sets: "3 × good reps", cue: "Hands shoulder-width or narrower. Elbows tracking along ribcage." }
+      ]
+    },
+    pull: {
+      title: "Pull Routine (Back, Biceps, Traps)",
+      desc: "Drive with elbows. Squeeze lats hard at peak contraction.",
+      exercises: [
+        { name: "One-Arm Dumbbell Row", sets: "4 × 12–20 each", cue: "Brace on chair or knee. Pull dumbbell to hip pocket. 2–3s controlled descent." },
+        { name: "Bent-Over Dumbbell Row", sets: "4 × 12–20", cue: "Hips hinged back, flat back. Drive elbows toward ceiling and squeeze rhomboids." },
+        { name: "Dumbbell Pullover", sets: "3 × 12–20", cue: "Lie across floor. Reach back for massive lat and ribcage expansion." },
+        { name: "Reverse Fly", sets: "3 × 15–25", cue: "Strict rear-delt isolation. Light weight with maximum upper-back squeeze." },
+        { name: "Alternating Curls", sets: "3 × 12–20", cue: "Supinate wrist at top (turn pinky toward shoulder) for peak bicep contraction." },
+        { name: "Hammer Curls", sets: "3 × 12–20", cue: "Neutral grip (thumbs up). Builds the brachialis and forearm thickness." },
+        { name: "Concentration Curls", sets: "2 × 12–15 each", cue: "Elbow braced on inner thigh. Slow 3-second negative descent." },
+        { name: "Farmer Carry", sets: "3 × 45–60 sec", cue: "Hold heaviest dumbbells at sides. Walk with tall posture and clamped core." }
+      ]
+    },
+    legs: {
+      title: "Legs & Abs Routine (Quads, Glutes, Hamstrings, Core)",
+      desc: "Light dumbbells require slow tempo and unilateral isolation to create deep hypertrophy.",
+      exercises: [
+        { name: "Goblet Squat", sets: "4 × 15–25", cue: "Hold DB at chest. 3s descent down, break parallel, drive through whole foot." },
+        { name: "Bulgarian Split Squat", sets: "4 × 10–15 each leg", cue: "Rear foot on chair/couch. Torso slight forward lean for massive glute/quad tension." },
+        { name: "Dumbbell Romanian Deadlift (RDL)", sets: "4 × 15–20", cue: "Push hips back as far as possible until hamstrings stretch. Spine neutral." },
+        { name: "Reverse Lunges", sets: "3 × 10–15 each", cue: "Step backward softly. 90° angles on both knees. Great for stability." },
+        { name: "Calf Raises", sets: "4 × 20–30", cue: "On a step edge. 2s pause at top and deep bottom stretch." },
+        { name: "Leg Raises", sets: "3 × 10–15", cue: "Flat on back. Raise legs with pelvic tilt. Do not arch lower back off floor." },
+        { name: "Bicycle Crunches", sets: "3 × 20", cue: "Slow and deliberate rotation. Shoulder blade off floor; touch elbow to knee." },
+        { name: "Plank", sets: "3 × 45–60 sec", cue: "Glutes clenched, abs tight, push elbows into floor. Active hard isometric hold." }
+      ]
+    },
+    cond: {
+      title: "Saturday Conditioning (5 Rounds)",
+      desc: "Rest 30 seconds between every movement. Fast marching if joint stress occurs.",
+      exercises: [
+        { name: "Jumping Jacks (or Fast Marching)", sets: "5 Rounds × 30 sec", cue: "Light on toes. 30 sec active, followed immediately by 30 sec complete rest." },
+        { name: "Rest Interval", sets: "30 sec", cue: "Controlled nasal breathing." },
+        { name: "Mountain Climbers", sets: "5 Rounds × 30 sec", cue: "Push-up plank position. Drive knees rapidly toward chest with steady hips." },
+        { name: "Rest Interval", sets: "30 sec", cue: "Drink sip of water." },
+        { name: "High Knees (or High Knee March)", sets: "5 Rounds × 30 sec", cue: "Pump arms, lift knees above hip level with rhythm." },
+        { name: "Final Round Rest", sets: "30 sec", cue: "Record heart rate recovery and round completion." }
+      ]
+    },
+    phase1: {
+      title: "Weeks 1–2: Full Body & Base Conditioning",
+      desc: "Building movement competency, joint resilience, and cardiovascular baseline.",
+      exercises: [
+        { name: "Full Body A (Mon & Fri)", sets: "4 Sets", cue: "Goblet Squats (15r) + Push-ups (12r) + One-arm DB Row (15r) + DB Shoulder Press (12r) + Plank (45s). Plus 15–20 min easy run/walk." },
+        { name: "Active Recovery (Tue)", sets: "30–40 min", cue: "Continuous brisk outdoor walking. Keep heart rate low and steady." },
+        { name: "Full Body B (Wed)", sets: "4 Sets", cue: "DB RDL (15r) + DB Floor Press (15r) + DB Pullover (15r) + Lateral Raises (15r) + Leg Raises (12r). Plus 15–20 min easy run/walk." },
+        { name: "Walking + Mobility (Thu)", sets: "30–40 min", cue: "Walking plus hip openers, hamstring stretches, and shoulder mobility." },
+        { name: "Weekend Aerobic Base (Sat)", sets: "45–60 min", cue: "Long continuous outdoor walk or slow jog. Clear the head and build mitochondria." },
+        { name: "Rest & Audit (Sun)", sets: "Rest Day", cue: "Fasted Sunday morning weigh-in, tape measurements, and photo audit." }
+      ]
+    },
+    running: {
+      title: "8-Week Running Progression Ladder",
+      desc: "Easy, conversational pace. Never sprint every session. Builds fat oxidation and stamina.",
+      exercises: [
+        { name: "Weeks 1–2", sets: "3 × 15–20 min", cue: "Easy run/walk intervals. If breathing is labored, walk until heart rate settles." },
+        { name: "Weeks 3–4", sets: "3 × 20–25 min", cue: "Continuous comfortable jog. You should be able to speak in short sentences." },
+        { name: "Weeks 5–6", sets: "3 × 25–30 min", cue: "Steady aerobic engine development. Noticeable improvement in daily stamina." },
+        { name: "Weeks 7–8", sets: "2–3 × 30 min", cue: "Solid 30-minute steady-state cardiovascular efficiency and calorie burn." }
+      ]
+    }
+  };
+
+  function renderWorkoutContent(tabKey) {
+    document.querySelectorAll(".workout-tab-btn").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-wtab") === tabKey);
+    });
+    var data = WORKOUT_DATA[tabKey];
+    var container = document.getElementById("workoutContent");
+    if (!data || !container) return;
+
+    var cards = data.exercises.map(function (ex) {
+      return '<div class="exercise-item">' +
+        '<div class="exercise-item-head">' +
+          '<span class="exercise-name">' + esc(ex.name) + '</span>' +
+          '<span class="exercise-sets">' + esc(ex.sets) + '</span>' +
+        '</div>' +
+        '<div class="exercise-cue">' + esc(ex.cue) + '</div>' +
+      '</div>';
+    }).join("");
+
+    container.innerHTML =
+      '<div style="margin-bottom:12px;">' +
+        '<h4 style="font-size:1.1rem;margin:0 0 2px;">' + esc(data.title) + '</h4>' +
+        '<p style="color:var(--muted);font-size:0.86rem;margin:0;">' + esc(data.desc) + '</p>' +
+      '</div>' +
+      '<div class="workout-card-grid">' + cards + '</div>';
+  }
+
+  document.querySelectorAll(".workout-tab-btn").forEach(function (btn) {
+    btn.onclick = function () { renderWorkoutContent(btn.getAttribute("data-wtab")); };
+  });
+
+  var DEFAULT_FITNESS_AUDIT = [
+    { id: "w0", week: "Baseline", date: "Oct 9", weight: "76", waist: "", chest: "", arm: "", thigh: "", photos: false, notes: "Starting: Age 21, 170cm, Untrained, 4kg/2.5kg DBs" },
+    { id: "w1", week: "Week 1", date: "Oct 18", weight: "", waist: "", chest: "", arm: "", thigh: "", photos: false, notes: "" },
+    { id: "w2", week: "Week 2", date: "Oct 25", weight: "", waist: "", chest: "", arm: "", thigh: "", photos: false, notes: "End of Phase 1 (Full Body foundation)" },
+    { id: "w3", week: "Week 3", date: "Nov 1", weight: "", waist: "", chest: "", arm: "", thigh: "", photos: false, notes: "Phase 2 (Push/Pull/Legs kick-off)" },
+    { id: "w4", week: "Week 4", date: "Nov 8", weight: "", waist: "", chest: "", arm: "", thigh: "", photos: false, notes: "Halfway recomposition audit" },
+    { id: "w5", week: "Week 5", date: "Nov 15", weight: "", waist: "", chest: "", arm: "", thigh: "", photos: false, notes: "" },
+    { id: "w6", week: "Week 6", date: "Nov 22", weight: "", waist: "", chest: "", arm: "", thigh: "", photos: false, notes: "" },
+    { id: "w7", week: "Week 7", date: "Nov 29", weight: "", waist: "", chest: "", arm: "", thigh: "", photos: false, notes: "" },
+    { id: "w8", week: "Week 8", date: "Dec 6", weight: "", waist: "", chest: "", arm: "", thigh: "", photos: false, notes: "Final 8-Week Transformation Audit" }
+  ];
+
+  function renderFitnessAudit() {
+    if (!store.fitnessAudit || !store.fitnessAudit.length) {
+      store.fitnessAudit = JSON.parse(JSON.stringify(DEFAULT_FITNESS_AUDIT));
+    }
+    var tbody = document.getElementById("fitnessAuditBody");
+    if (!tbody) return;
+    tbody.innerHTML = "";
+
+    var baselineWaist = parseFloat(store.fitnessAudit[0].waist) || null;
+    var latestWaist = null;
+    var latestWeight = parseFloat(store.fitnessAudit[0].weight) || 76;
+    var photosLoggedCount = 0;
+
+    store.fitnessAudit.forEach(function (row, idx) {
+      var tr = document.createElement("tr");
+      if (idx === 0) tr.className = "baseline-row";
+
+      if (row.waist && !isNaN(parseFloat(row.waist))) {
+        latestWaist = parseFloat(row.waist);
+      }
+      if (row.weight && !isNaN(parseFloat(row.weight))) {
+        latestWeight = parseFloat(row.weight);
+      }
+      if (row.photos) photosLoggedCount++;
+
+      var deltaHtml = "";
+      if (idx > 0 && baselineWaist && row.waist && !isNaN(parseFloat(row.waist))) {
+        var diff = (parseFloat(row.waist) - baselineWaist).toFixed(1);
+        var sign = diff > 0 ? "+" : "";
+        var color = diff <= 0 ? "var(--success)" : "var(--danger)";
+        deltaHtml = ' <small style="color:' + color + ';font-family:var(--font-mono);font-weight:600;">(' + sign + diff + 'cm)</small>';
+      }
+
+      tr.innerHTML =
+        '<td><b>' + row.week + '</b><br><span style="color:var(--muted);font-size:0.76rem;font-family:var(--font-mono);">' + row.date + '</span></td>' +
+        '<td><input type="number" step="0.1" value="' + (row.weight !== undefined ? row.weight : "") + '" placeholder="kg" data-field="weight" data-idx="' + idx + '"></td>' +
+        '<td><input type="number" step="0.5" value="' + (row.waist !== undefined ? row.waist : "") + '" placeholder="cm" data-field="waist" data-idx="' + idx + '">' + deltaHtml + '</td>' +
+        '<td><input type="number" step="0.5" value="' + (row.chest !== undefined ? row.chest : "") + '" placeholder="cm" data-field="chest" data-idx="' + idx + '"></td>' +
+        '<td><input type="number" step="0.5" value="' + (row.arm !== undefined ? row.arm : "") + '" placeholder="cm" data-field="arm" data-idx="' + idx + '"></td>' +
+        '<td><input type="number" step="0.5" value="' + (row.thigh !== undefined ? row.thigh : "") + '" placeholder="cm" data-field="thigh" data-idx="' + idx + '"></td>' +
+        '<td><button type="button" class="photo-btn' + (row.photos ? ' logged' : '') + '" data-idx="' + idx + '">' + (row.photos ? '✓ Logged' : '📷 Pending') + '</button></td>' +
+        '<td><input type="text" value="' + esc(row.notes || "") + '" placeholder="Observations, stamina, strength" data-field="notes" data-idx="' + idx + '"></td>';
+
+      tbody.appendChild(tr);
+    });
+
+    tbody.querySelectorAll("input").forEach(function (inp) {
+      inp.onchange = function (e) {
+        var idx = parseInt(e.target.getAttribute("data-idx"), 10);
+        var field = e.target.getAttribute("data-field");
+        store.fitnessAudit[idx][field] = e.target.value;
+        save();
+        renderFitnessAudit();
+      };
+    });
+
+    tbody.querySelectorAll(".photo-btn").forEach(function (btn) {
+      btn.onclick = function () {
+        var idx = parseInt(btn.getAttribute("data-idx"), 10);
+        store.fitnessAudit[idx].photos = !store.fitnessAudit[idx].photos;
+        save();
+        renderFitnessAudit();
+      };
+    });
+
+    var statWaistEl = document.getElementById("recompWaistSummary");
+    var statWeightEl = document.getElementById("recompWeightSummary");
+    var statPhotosEl = document.getElementById("recompPhotosSummary");
+    if (statWaistEl) {
+      if (baselineWaist && latestWaist && baselineWaist !== latestWaist) {
+        var diff = (latestWaist - baselineWaist).toFixed(1);
+        statWaistEl.innerHTML = baselineWaist + 'cm &rarr; <b>' + latestWaist + 'cm (' + (diff > 0 ? "+" : "") + diff + 'cm)</b>';
+      } else if (baselineWaist) {
+        statWaistEl.innerHTML = 'Baseline: <b>' + baselineWaist + 'cm</b>';
+      } else {
+        statWaistEl.innerHTML = '<b>Log Baseline</b>';
+      }
+    }
+    if (statWeightEl) {
+      statWeightEl.innerHTML = '76 kg &rarr; <b>' + latestWeight + ' kg</b>';
+    }
+    if (statPhotosEl) {
+      statPhotosEl.innerHTML = '<b>' + photosLoggedCount + ' / 8 weeks</b>';
+    }
+  }
+
   function render() {
     renderTabs();
     renderBlocks();
     renderCounters();
     renderProgress();
     renderDeliverablesStack();
+    renderFitnessAudit();
+    renderWorkoutContent(activeWorkoutTab || "push");
   }
 
   render();
