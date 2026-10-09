@@ -1,0 +1,9 @@
+node_modules/
+.agent/
+.agents/
+.gemini/
+.claude/
+.codex/
+.opencode/
+.DS_Store
+Thumbs.db
