@@ -35,6 +35,8 @@
   --base-bg: #eaeef0;
   --grow: #b22d55;
   --grow-bg: #fbe3eb;
+  --linkedin: #0a66c2;
+  --linkedin-bg: #e8f3ff;
 
   --now: #d93829;
   --now-bg: rgba(217, 56, 41, 0.08);
@@ -86,6 +88,8 @@
     --base-bg: #202d2b;
     --grow: #f79cb7;
     --grow-bg: #401826;
+    --linkedin: #70b5f9;
+    --linkedin-bg: #102a45;
 
     --now: #ff6e61;
     --now-bg: rgba(255, 110, 97, 0.12);
@@ -731,6 +735,7 @@ h4 {
 .cat-body { --c: var(--body); --cbg: var(--body-bg); }
 .cat-base { --c: var(--base); --cbg: var(--base-bg); }
 .cat-grow { --c: var(--grow); --cbg: var(--grow-bg); }
+.cat-linkedin { --c: var(--linkedin); --cbg: var(--linkedin-bg); }
 
 .right {
   display: flex;
@@ -2177,6 +2182,10 @@ ul.plain li {
         <span class="sep">&middot;</span>
         <span>8-Wk Plan</span>
       </div>
+      <div class="goal-pill" style="border-color:var(--linkedin);">
+        <span style="color:var(--linkedin);">LinkedIn Reach:</span>
+        <b style="color:var(--linkedin);">1M Imp &middot; 10k Target</b>
+      </div>
     </div>
   </header>
 
@@ -2198,6 +2207,10 @@ ul.plain li {
     </button>
     <button type="button" class="nav-tab" data-view="plan">
       <span>Sprint Roadmap</span>
+    </button>
+    <button type="button" class="nav-tab" data-view="linkedin">
+      <span>LinkedIn Daily Engine</span>
+      <span class="badge" style="background:#0a66c2;color:#fff;font-weight:600;">Daily Tasks &amp; Copy</span>
     </button>
     <button type="button" class="nav-tab" data-view="all">
       <span>Show All</span>
@@ -2221,6 +2234,7 @@ ul.plain li {
           <span style="--c: var(--audit)">Go Leverage audits</span>
           <span style="--c: var(--walk)">Walk-ins</span>
           <span style="--c: var(--mail)">Appointy emails</span>
+          <span style="--c: var(--linkedin)">LinkedIn tasks</span>
           <span style="--c: var(--body)">Body</span>
           <span style="--c: var(--base)">Meals and rest</span>
           <span style="--c: var(--grow)">Personal growth</span>
@@ -2250,6 +2264,9 @@ ul.plain li {
               <button type="button" class="btn small" data-v="Hit goal">Hit goal</button>
               <button type="button" class="btn small" data-v="Walk-in push">Walk-in push</button>
               <button type="button" class="btn small" data-v="Missed tasks">Missed tasks</button>
+              <button type="button" class="btn small" data-v="LinkedIn dropped">LinkedIn dropped</button>
+              <button type="button" class="btn small" data-v="15 comments done">15 comments done</button>
+              <button type="button" class="btn small" data-v="20 invites sent">20 invites sent</button>
             </div>
           </div>
           <p class="hint">Mark each block as ✓ (Done/Good) or ✕ (Missed/Bad). Everything flows into your Deliverables Stack!</p>
@@ -2574,6 +2591,71 @@ ul.plain li {
       </div>
     </section>
   </section>
+
+  <!-- SECTION 6: LINKEDIN DAILY ENGINE & COPY ARSENAL -->
+  <section class="app-section is-hidden" id="sec-linkedin" aria-label="LinkedIn Daily Engine">
+    <div class="linkedin-wrap">
+      
+      <!-- LinkedIn Hero & KPI Strip -->
+      <div class="li-hero">
+        <div class="li-hero-head">
+          <div>
+            <h2>LinkedIn Daily Execution Engine &middot; Autonomous Studio</h2>
+            <p style="color:var(--muted);font-size:0.92rem;margin:4px 0 0;">
+              Objective: 1,000,000 Organic Impressions &amp; 10,000 High-Affinity ICP Followers by Nov 30 (50-Day Sprint).
+            </p>
+          </div>
+          <span class="li-badge">&#x26A1; Daily: 1 Post &middot; 15 Comments &middot; 20 Outbound Notes</span>
+        </div>
+
+        <div class="li-metrics-grid">
+          <div class="li-metric-card">
+            <span class="lbl">Reach Horizon</span>
+            <span class="num" style="color:var(--linkedin);">1,000,000</span>
+            <span class="sub">Organic impressions target</span>
+          </div>
+          <div class="li-metric-card">
+            <span class="lbl">ICP Network</span>
+            <span class="num" style="color:var(--success);">10,000</span>
+            <span class="sub">Followers / Network</span>
+          </div>
+          <div class="li-metric-card">
+            <span class="lbl">Schedule Block 1</span>
+            <span class="num">1:00 PM</span>
+            <span class="sub">Post Drop + 15 Comments</span>
+          </div>
+          <div class="li-metric-card">
+            <span class="lbl">Schedule Block 2</span>
+            <span class="num">9:30 PM</span>
+            <span class="sub">20 Notes + DM Follow-up</span>
+          </div>
+        </div>
+
+        <div class="li-jump-strip">
+          <span>&#x1F552; LinkedIn is built directly into your daily calendar schedule!</span>
+          <button type="button" class="btn primary small" id="jumpToCalLiBtn">View Today's LinkedIn Blocks in Calendar &rarr;</button>
+        </div>
+
+        <!-- Day Switcher Tabs -->
+        <nav class="li-day-nav" role="tablist" aria-label="LinkedIn Days">
+          <button type="button" class="li-day-tab active" data-liday="day1"><span>Day 1: 14 Clinics Audit</span></button>
+          <button type="button" class="li-day-tab" data-liday="day2"><span>Day 2: 48-Hr 3D Carousel</span></button>
+          <button type="button" class="li-day-tab" data-liday="day3"><span>Day 3: Instagram D2C Teardown</span></button>
+          <button type="button" class="li-day-tab" data-liday="day4"><span>Day 4: AI Booking Engine</span></button>
+          <button type="button" class="li-day-tab" data-liday="day5"><span>Day 5: 10 Walk-In Lessons</span></button>
+          <button type="button" class="li-day-tab" data-liday="day6"><span>Day 6: Clinic No-Show Bot</span></button>
+          <button type="button" class="li-day-tab" data-liday="day7"><span>Day 7: Sunday Sprint Review</span></button>
+          <button type="button" class="li-day-tab" data-liday="tools"><span>Comment &amp; Outbound Arsenal</span></button>
+          <button type="button" class="li-day-tab" data-liday="roadmap"><span>50-Day Content Matrix</span></button>
+        </nav>
+      </div>
+
+      <!-- Container for Day Plans -->
+      <div id="liDayContent" class="li-day-container"></div>
+
+    </div>
+  </section>
+
 </div>
 
 <!-- Mobile Floating Scoreboard Bar -->
@@ -2624,7 +2706,8 @@ ul.plain li {
       dashboard: document.getElementById("sec-dashboard"),
       deliverables: document.getElementById("sec-deliverables"),
       fitness: document.getElementById("sec-fitness"),
-      plan: document.getElementById("sec-plan")
+      plan: document.getElementById("sec-plan"),
+      linkedin: document.getElementById("sec-linkedin")
     };
     if (view === "all") {
       Object.keys(sections).forEach(function (k) { sections[k].classList.remove("is-hidden"); });
@@ -2644,8 +2727,8 @@ ul.plain li {
 
   var MIN = function (h, m) { return h * 60 + (m || 0); };
   var DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
-  var LABEL = { audit: "Audit", walk: "Walk-in", mail: "Appointy", body: "Body", base: "Base", grow: "Growth" };
-  var CATS = [["audit", "Go Leverage audit"], ["walk", "Walk-in"], ["mail", "Appointy emails"], ["body", "Body"], ["base", "Meals and rest"], ["grow", "Personal growth"]];
+  var LABEL = { audit: "Audit", walk: "Walk-in", mail: "Appointy", linkedin: "LinkedIn", body: "Body", base: "Base", grow: "Growth" };
+  var CATS = [["audit", "Go Leverage audit"], ["walk", "Walk-in"], ["mail", "Appointy emails"], ["linkedin", "LinkedIn tasks"], ["body", "Body"], ["base", "Meals and rest"], ["grow", "Personal growth"]];
 
   var H = function (h, m) { return (h < 4 ? h + 24 : h) * 60 + (m || 0); };
   var WORK = [
@@ -2658,12 +2741,14 @@ ul.plain li {
     [H(11,30), H(12,0), "Break", "Get away from the screen. Eat something if needed. Don't turn it into 30 minutes of Instagram.", "base"],
     [H(12,0), H(12,45), "Finish and personalize the audit", "Make every recommendation specific to what you saw, not 'you need a better website'.", "audit"],
     [H(12,45), H(13,0), "Send or queue the audit", "Update your lead tracker. End the block knowing exactly what happened. Morning KPI: 1 high-quality audit completed and sent.", "audit"],
-    [H(13,0), H(13,30), "Lunch and prepare", "Eat. Pack phone, notes, questions, lead tracker, route, offer information. At 1:30 you leave.", "base"],
-    [H(13,30), H(19,0), "Walk-in business", "Goal: 10 genuine conversations, not 10 businesses entered. Ask: what do you do, how do customers find you, what happens after interest, where do you lose people, what wastes your time, how often, what does it cost. Discover first, sell second. Log every business in the tracker.", "walk"],
+    [H(13,0), H(13,30), "LinkedIn: Drop Daily Post & Comment Blitz", "Publish today's teardown/carousel post + leave 15 thoughtful comments on targeted niche creators. 0-scroll discipline.", "linkedin"],
+    [H(13,30), H(14,0), "Lunch and prepare", "Eat high-protein lunch. Pack phone, notes, questions, lead tracker, route, offer information. At 2:00 you leave for walk-ins.", "base"],
+    [H(14,0), H(19,0), "Walk-in business", "Goal: 10 genuine conversations, not 10 businesses entered. Ask: what do you do, how do customers find you, what happens after interest, where do you lose people, what wastes your time, how often, what does it cost. Discover first, sell second. Log every business in the tracker.", "walk"],
     [H(19,0), H(20,0), "Return, dinner and reset", "Eat, shower, change clothes, relax. This hour is not productive work.", "base"],
     [H(20,0), H(20,20), "Appointy: research prospects", "Find businesses that actually have the problem your system solves.", "mail"],
-    [H(20,20), H(21,40), "Appointy: personalized emails", "Target: 10 high-quality emails minimum. Each has a specific observation, the business problem, why it matters, what you would change and a clear next step.", "mail"],
-    [H(21,40), H(22,0), "Appointy: update pipeline", "Record sent, replies, positive replies, calls and follow-ups. Appointy is finished for the day.", "mail"],
+    [H(20,20), H(21,30), "Appointy: personalized emails", "Target: 10 high-quality emails minimum. Each has a specific observation, the business problem, why it matters, what you would change and a clear next step.", "mail"],
+    [H(21,30), H(22,0), "LinkedIn: Outbound Notes & Inbound DMs", "Send 20 personalized connection requests (<200 char note). Reply to inbound DMs and comments from today's post within the golden window.", "linkedin"],
+    [H(22,0), H(22,20), "Appointy: update pipeline", "Record sent, replies, positive replies, calls and follow-ups. Appointy is finished for the day.", "mail"],
     [H(22,0), H(23,0), "Walk and decompress", "Your existing strolling time. Walk, think, music or a podcast. Don't turn it into two hours of scrolling.", "body"],
     [H(23,0), H(23,5), "Reset", "Phone away, water, desk clear, notebook open, tomorrow's calendar open. Switch from business mode to personal development mode.", "grow"],
     [H(23,5), H(23,10), "5-minute camera practice", "Record yourself for exactly five minutes on one topic, for example what you learned from today's businesses. No editing. The goal is communication confidence.", "grow"],
@@ -2677,6 +2762,9 @@ ul.plain li {
     { id: "audits", label: "Audits sent", goal: 1 },
     { id: "convos", label: "Real conversations", goal: 10 },
     { id: "emails", label: "Appointy emails sent", goal: 10 },
+    { id: "liposts", label: "LinkedIn post dropped", goal: 1 },
+    { id: "licomm", label: "LinkedIn creator comments", goal: 15 },
+    { id: "liconnect", label: "LinkedIn connection notes", goal: 20 },
     { id: "pages", label: "Pages read", goal: 10 },
     { id: "reels", label: "Reels posted", goal: 1 },
     { id: "camera", label: "Camera practice done", goal: 1 }
@@ -2802,7 +2890,20 @@ ul.plain li {
   function fromDefaults(i) {
     return WORK.map(function (r) { return { id: newId(), s: r[0], e: r[1], t: r[2], n: r[3], c: r[4] }; });
   }
-  function sched(i) { if (!store.sched[i]) store.sched[i] = fromDefaults(i); return store.sched[i]; }
+  function sched(i) {
+    if (!store.sched[i]) {
+      store.sched[i] = fromDefaults(i);
+    } else {
+      var hasLi = store.sched[i].some(function (b) { return b.c === "linkedin"; });
+      if (!hasLi) {
+        var liBlocks = fromDefaults(i).filter(function (b) { return b.c === "linkedin"; });
+        store.sched[i] = store.sched[i].concat(liBlocks);
+        store.sched[i].sort(function (a, b) { return a.s - b.s; });
+        save();
+      }
+    }
+    return store.sched[i];
+  }
 
   var now = new Date();
   var adj = new Date(now.getTime() - 4 * 3600 * 1000);
