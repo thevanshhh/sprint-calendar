@@ -2133,6 +2133,255 @@ ul.plain li {
 @media (prefers-reduced-motion: reduce) {
   .bar i { transition: none; }
 }
+
+/* =========================================
+   LINKEDIN GROWTH ENGINE SECTION
+   ========================================= */
+.linkedin-wrap {
+  display: grid;
+  gap: 22px;
+}
+
+.li-hero {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  gap: 16px;
+}
+
+.li-hero-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.li-badge {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(10, 102, 194, 0.12);
+  color: #0a66c2;
+  border: 1px solid rgba(10, 102, 194, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.li-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+}
+
+.li-metric-card {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.li-metric-card .num {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--fg);
+  line-height: 1.2;
+}
+.li-metric-card .lbl {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+.li-metric-card .sub {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+/* Day Switcher */
+.li-day-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 4px;
+}
+.li-day-tab {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--fg);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.li-day-tab:hover {
+  background: var(--surface-hover);
+  border-color: var(--muted);
+}
+.li-day-tab.active {
+  background: #0a66c2;
+  color: #ffffff;
+  border-color: #0a66c2;
+}
+
+.li-day-container {
+  display: grid;
+  gap: 20px;
+}
+
+.li-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  gap: 16px;
+}
+.li-card h3 {
+  font-size: 1.25rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.li-step-grid {
+  display: grid;
+  gap: 14px;
+}
+.li-step-item {
+  background: var(--bg);
+  border: 1px solid var(--line-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  display: grid;
+  gap: 10px;
+}
+.li-step-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.li-step-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--fg);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.li-time-tag {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+}
+
+.li-code-block {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  color: var(--fg);
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.copy-btn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  background: #0a66c2;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.12s ease;
+}
+.copy-btn:hover { background: #084e96; }
+.copy-btn:active { transform: scale(0.96); }
+
+.li-checklist {
+  display: grid;
+  gap: 8px;
+}
+.li-check-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--line-subtle);
+  transition: background 0.15s ease;
+}
+.li-check-label:hover { background: var(--surface-hover); }
+.li-check-label input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  accent-color: #0a66c2;
+  cursor: pointer;
+}
+.li-check-label.is-checked {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #0a66c2;
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  padding: 10px 18px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateY(10px);
+  z-index: 9999;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 </style>
 </head>
 <body>
@@ -2177,7 +2426,11 @@ ul.plain li {
         <span class="sep">&middot;</span>
         <span>8-Wk Plan</span>
       </div>
-    </div>
+          <div class="goal-pill" style="border-color:#0a66c2;">
+        <span style="color:#0a66c2;">LinkedIn Reach:</span>
+        <b style="color:#0a66c2;">1,000,000 Imp &middot; 10k Followers</b>
+      </div>
+</div>
   </header>
 
   <!-- Section Navigation Tabs -->
@@ -2198,6 +2451,10 @@ ul.plain li {
     </button>
     <button type="button" class="nav-tab" data-view="plan">
       <span>Sprint Roadmap</span>
+    </button>
+        <button type="button" class="nav-tab" data-view="linkedin">
+      <span>LinkedIn Growth Engine</span>
+      <span class="badge" style="background:#0a66c2;color:#fff;font-weight:600;">1M Target</span>
     </button>
     <button type="button" class="nav-tab" data-view="all">
       <span>Show All</span>
@@ -2574,6 +2831,69 @@ ul.plain li {
       </div>
     </section>
   </section>
+
+  <!-- SECTION: LINKEDIN GROWTH ENGINE -->
+  <section class="app-section is-hidden" id="sec-linkedin" aria-label="LinkedIn Growth Engine">
+    <div class="linkedin-wrap">
+      
+      <!-- LinkedIn Hero & KPI Tracker -->
+      <div class="li-hero">
+        <div class="li-hero-head">
+          <div>
+            <h2>LinkedIn Hyper-Growth Engine &middot; Autonomous Agency</h2>
+            <p style="color:var(--muted);font-size:0.92rem;margin:4px 0 0;">
+              Objective: 1,000,000 Organic Impressions &amp; 10,000 Followers by November 30 (50-Day Runway).
+            </p>
+          </div>
+          <span class="li-badge">&#x26A1; Target Pace: ~20k Imp/Day &middot; 200 Followers/Day</span>
+        </div>
+
+        <div class="li-metrics-grid">
+          <div class="li-metric-card">
+            <span class="lbl">Reach Target</span>
+            <span class="num" style="color:#0a66c2;">1,000,000</span>
+            <span class="sub">Organic impressions across 50 days</span>
+          </div>
+          <div class="li-metric-card">
+            <span class="lbl">Follower Target</span>
+            <span class="num" style="color:var(--success);">10,000</span>
+            <span class="sub">High-affinity ICP network</span>
+          </div>
+          <div class="li-metric-card">
+            <span class="lbl">Daily Post Cadence</span>
+            <span class="num">2 Posts</span>
+            <span class="sub">Morning Carousel + Afternoon Teardown</span>
+          </div>
+          <div class="li-metric-card">
+            <span class="lbl">Engagement Blitz</span>
+            <span class="num">15 + 20</span>
+            <span class="sub">15 Creator comments &middot; 20 Connection notes</span>
+          </div>
+        </div>
+
+        <!-- Day Switcher Tabs -->
+        <nav class="li-day-nav" role="tablist" aria-label="LinkedIn Days">
+          <button type="button" class="li-day-tab active" data-liday="day1">
+            <span>Day 1: Launch &amp; Clinics Audit</span>
+          </button>
+          <button type="button" class="li-day-tab" data-liday="day2">
+            <span>Day 2: 48-Hr 3D Carousel</span>
+          </button>
+          <button type="button" class="li-day-tab" data-liday="day3">
+            <span>Day 3: Instagram D2C Teardown</span>
+          </button>
+          <button type="button" class="li-day-tab" data-liday="tools">
+            <span>Outbound &amp; Comment Toolkit</span>
+          </button>
+        </nav>
+      </div>
+
+      <!-- Container for Day Plans -->
+      <div id="liDayContent" class="li-day-container"></div>
+
+    </div>
+  </section>
+
 </div>
 
 <!-- Mobile Floating Scoreboard Bar -->
@@ -2624,7 +2944,8 @@ ul.plain li {
       dashboard: document.getElementById("sec-dashboard"),
       deliverables: document.getElementById("sec-deliverables"),
       fitness: document.getElementById("sec-fitness"),
-      plan: document.getElementById("sec-plan")
+      plan: document.getElementById("sec-plan"),
+      linkedin: document.getElementById("sec-linkedin")
     };
     if (view === "all") {
       Object.keys(sections).forEach(function (k) { sections[k].classList.remove("is-hidden"); });
@@ -3696,7 +4017,361 @@ ul.plain li {
     renderWorkoutContent(activeWorkoutTab || "push");
   }
 
+
+  /* =========================================
+     LINKEDIN GROWTH ENGINE DATA & LOGIC
+     ========================================= */
+  var LINKEDIN_DAYS = {
+    day1: {
+      title: "Day 1: Authority Launch & The 14 Clinics Audit",
+      date: "Oct 10 (Today)",
+      goal: "Establish boots-on-the-ground proof, lock down profile conversion rate, and ignite golden hour engagement.",
+      checklistId: "li-checks-day1",
+      tasks: [
+        { id: "c1", text: "Lockdown Profile: Update 218-char Headline & 7-Step About section" },
+        { id: "c2", text: "Drop Post #1 between 5:30 PM - 7:30 PM (Medical Clinics Teardown)" },
+        { id: "c3", text: "Execute Golden Hour: 5 high-depth comments on agency/tech creator posts" },
+        { id: "c4", text: "Thread Defense (8:30 PM): Answer every comment under Post #1 with an open question" }
+      ],
+      steps: [
+        {
+          time: "Step 1 &middot; 5:00 PM",
+          title: "Profile Conversion Setup",
+          desc: "Your profile is a landing page. Headline uses all 218 chars, About section hooks before 260 chars.",
+          snippet: "Headline: Creative Technologist & Systems Architect | Building High-Impact 3D Web & AI Booking Systems That Turn Invisible Businesses Into Market Leaders | 48-Hour Rapid Delivery | DM \"DEMO\""
+        },
+        {
+          time: "Step 2 &middot; 5:30 PM - 7:30 PM",
+          title: "Drop Post #1 (14 Medical Clinics Teardown)",
+          desc: "Formula: F7 Odd-Precision Money Ledger + F10 Contrarian Boots-on-the-Ground. 100% humanized, zero AI slop.",
+          copyText: `I walked into 14 medical clinics last week.
+
+60% of them bleed patients after 7:00 PM for one stupid reason:
+
+Their receptionists go home.
+
+Think about how a normal person books a doctor, a dental checkup, or a physio session.
+They don't do it at 11:00 AM while sitting in meetings.
+They do it at 9:30 PM from their couch when their tooth or back starts acting up.
+
+They search Google.
+They find the clinic.
+They see: "Call to book."
+
+They call. Nobody picks up.
+They close the tab, find the next clinic with a 24/7 online calendar, and book there in 45 seconds.
+
+That is ₹25,000 to ₹50,000 in monthly patient value vanishing in thin air. Not because the doctor isn't world-class.
+Simply because the clinic is running on a 2012 communication setup.
+
+At 20, while everyone is building another generic AI wrapper, I've been walking into local businesses looking at where the actual pipe is leaking.
+
+Here is the 3-part infrastructure every service business needs today:
+
+1. A 3D or high-impact modern front-end that proves instant authority in 3 seconds.
+2. A frictionless self-serve booking calendar integrated into Google Maps.
+3. WhatsApp confirmation & reminder automations so no-show rates drop to near zero.
+
+Stop trying to fix a leaky bucket with more marketing spend.
+Fix the booking pipe first.
+
+If you run a clinic or service business, what is your biggest bottleneck right now: getting new inquiries, or handling the ones you already have?
+
+P.S. Dropping a full teardown of the 48-hour clinic booking architecture this week. Connect or follow along if you want the breakdown.`
+        },
+        {
+          time: "Step 3 &middot; 6:00 PM - 7:00 PM",
+          title: "Golden Hour Creator Comment Blitz (5 Comments)",
+          desc: "Find 5 posts published in the last 2 hours by 20k-100k creators. Add a concrete number or new noun to get pinned.",
+          copyText: `The tools-versus-custom argument misses one operational variable.. dwell time.
+
+When everyone uses flat templates, average session duration is under 15 seconds. Adding interactive 3D scroll shaders pushed our test builds past 50+ seconds without hurting mobile load speeds.
+
+Curious if you are seeing clients prioritize visual retention over standard templates yet?`
+        }
+      ]
+    },
+    day2: {
+      title: "Day 2: High-Dwell Carousel & Outbound Expansion",
+      date: "Oct 11 (Tomorrow)",
+      goal: "Hold users on screen for 60+ seconds with a document post (carousel) + 20 personalized connection notes.",
+      checklistId: "li-checks-day2",
+      tasks: [
+        { id: "c2_1", text: "Export Carousel 8-Slide PDF from Figma/Canva" },
+        { id: "c2_2", text: "Drop Post #2 (Document Post) at 8:30 AM local" },
+        { id: "c2_3", text: "Morning Creator Hijack: 10 targeted comments between 9:00 AM - 9:45 AM" },
+        { id: "c2_4", text: "Outbound Network Sprint: Send 20 bespoke connection notes (<200 chars) to founders" },
+        { id: "c2_5", text: "Evening Thread Cleanup: Reply to all carousel commenters" }
+      ],
+      steps: [
+        {
+          time: "Step 1 &middot; 8:30 AM",
+          title: "Drop Carousel: Why Flat Websites Bleed Customers",
+          desc: "Upload 8-slide PDF. Carousels trigger LinkedIn's highest tier dwell-time algorithm.",
+          copyText: `The average visitor leaves your website in 2.8 seconds.
+
+If you look like a ₹500 WordPress template, you get treated like one.
+
+I broke down why standard 2D websites bleed attention.. and how 48-hour interactive 3D systems 3x user dwell time.
+
+8 slides. Swipe through the teardown below ->`
+        },
+        {
+          time: "Step 2 &middot; 8-Slide Script Breakdown",
+          title: "Carousel Slides Copy (Ready to export to PDF)",
+          desc: "Slide 1 is 80% of the result. Keep each slide under 25 words.",
+          snippet: `[Slide 1 - Cover]: Flat Websites Are Dead in 2026. (Swipe to see what replaces them ->)
+[Slide 2 - The Stake]: The average visitor decides in 2.8 seconds. If your site looks generic, your authority is zero.
+[Slide 3 - The Problem]: Flat text + stock photos = 80% bounce rate. Visitors feel nothing.
+[Slide 4 - The 3D Fix]: Interactive WebGL & scroll shaders hold attention for 50+ seconds. Dwell time = trust.
+[Slide 5 - The Speed Myth]: Myth: 3D takes 3 months. Reality: Modern workflows ship in 48 to 72 hours.
+[Slide 6 - The System]: Stunning visuals stop the scroll. Automated booking & WhatsApp close the sale.
+[Slide 7 - Cheat Sheet]: 1. 3D WebGL Hero | 2. Lightweight Shaders | 3. 24/7 Booking Engine | 4. WhatsApp Automation
+[Slide 8 - CTA]: Turn your presence into a client-booking engine. Follow @Vansh Kumar. DM "3D" for live demos.`
+        },
+        {
+          time: "Step 3 &middot; 1:30 PM",
+          title: "Outbound Connection Sprint (20 Notes)",
+          desc: "Target local clinic operators, tech founders, and agency owners. Must stay under 200 characters.",
+          copyText: `Loved your recent update on your studio's workflow. Building interactive 3D web systems and local booking engines here in India. Would love to follow along with your journey!`
+        }
+      ]
+    },
+    day3: {
+      title: "Day 3: The Viral D2C Teardown & Inbound Harvest",
+      date: "Oct 12 (Sunday)",
+      goal: "Ignite intense engagement from Instagram sellers, marketers, and operators on the 'PP in DM' nightmare.",
+      checklistId: "li-checks-day3",
+      tasks: [
+        { id: "c3_1", text: "Drop Post #3 at 1:30 PM (The Instagram PP in DM Trap)" },
+        { id: "c3_2", text: "E-Commerce Comment Blitz: Engage on 10 posts under #ecommerce and #d2c" },
+        { id: "c3_3", text: "Triage Inbound Inbox: Sort requests into Lead / Peer / Spam" },
+        { id: "c3_4", text: "Log 3-Day Reach Multiple and profile view delta" }
+      ],
+      steps: [
+        {
+          time: "Step 1 &middot; 1:30 PM",
+          title: "Drop Post #3 (The 'PP in DM' Instagram Trap)",
+          desc: "Formula: F18 False Binary + F19 Anecdote-Meets-Evidence. High shares and emotional resonance.",
+          copyText: `The biggest scam in Instagram e-commerce is the phrase "PP in DM" (Price Please).
+
+Every single day, thousands of boutique clothing, jewelry, and lifestyle brands spend 4+ hours doing this:
+
+1. Post a new product reel.
+2. Get 50 comments asking "Price?"
+3. Manually DM: "Hey dear, it is ₹1,499 + shipping."
+4. Wait for them to ask for payment details.
+5. Manually send UPI QR code.
+6. Wait for a screenshot of the payment receipt.
+
+It is 2026. This isn't commerce. It is manual data entry.
+
+Here is the brutal math:
+For every hour a seller takes to reply to that "PP" comment, purchase intent drops by 50%.
+By the time you reply 3 hours later, the customer has bought from someone else.
+
+What happens when you deploy an automated storefront funnel:
+• Comment trigger sends instant product link & checkout directly in WhatsApp/Instagram.
+• Customer sees inventory, picks their size, and checks out in 60 seconds via UPI.
+• Order is logged, confirmation sent, tracking auto-generated.
+
+Stop paying with your time for bottlenecks that a simple automated system solves in 24 hours.
+
+If you sell on Instagram, how much of your day goes into manually replying to prices and orders?`
+        },
+        {
+          time: "Step 2 &middot; 2:00 PM - 3:00 PM",
+          title: "E-Commerce Authority Comments",
+          desc: "Use under top posts talking about Shopify, D2C acquisition, or Instagram sales.",
+          copyText: `The 'PP in DM' workflow is the single biggest conversion killer on Instagram.
+
+Every hour of delay between a comment and a manual DM drops purchase intent by half. Automating the checkout trigger directly to WhatsApp changes that entire unit economics equation.`
+        }
+      ]
+    },
+    tools: {
+      title: "Growth Toolkit: Comment Templates & 200-Char Outbound Tester",
+      date: "Daily Utility",
+      goal: "Use these weapons every day to hijack authority and maintain a 45%+ connection accept rate.",
+      checklistId: "li-checks-tools",
+      tasks: [
+        { id: "ct_1", text: "Target 15 creator posts daily using the 3 comment formulas" },
+        { id: "ct_2", text: "Verify connection notes stay strictly under 200 characters with the tool below" },
+        { id: "ct_3", text: "Reply to all inbound leads within 2 hours" }
+      ],
+      steps: [
+        {
+          time: "Template A",
+          title: "The 'Field Receipt' (Agency / Tech / Design posts)",
+          desc: "Introduces dwell time and concrete 48-hour build metrics.",
+          copyText: `The tools-versus-custom argument misses one operational variable.. dwell time.
+
+When everyone uses flat templates, average session duration is under 15 seconds. Adding interactive 3D scroll shaders pushed our test builds past 50+ seconds without hurting mobile load speeds.
+
+Curious if you are seeing clients prioritize visual retention over standard templates yet?`
+        },
+        {
+          time: "Template B",
+          title: "The 'Local Bottleneck' (Clinic / Service / Business posts)",
+          desc: "Calls out the 7 PM after-hours lead drop-off.",
+          copyText: `Spot on regarding communication lag, but the biggest leak is after hours.
+
+When auditing local clinics last week, over 60% of appointment intent hit after 7:00 PM when reception was off the clock. If there isn't a 24/7 calendar sync, that revenue just evaporates to whoever has an instant booking link.`
+        },
+        {
+          time: "Template C",
+          title: "The 'D2C Friction Callout' (E-Commerce / D2C posts)",
+          desc: "Calls out manual DM order chaos.",
+          copyText: `The 'PP in DM' workflow is the single biggest conversion killer on Instagram.
+
+Every hour of delay between a comment and a manual DM drops purchase intent by half. Automating the checkout trigger directly to WhatsApp changes that entire unit economics equation.`
+        }
+      ]
+    }
+  };
+
+  var activeLiDay = "day1";
+
+  function showToast(msg) {
+    var t = document.getElementById("liToast");
+    if (!t) {
+      t = document.createElement("div");
+      t.id = "liToast";
+      t.className = "toast";
+      document.body.appendChild(t);
+    }
+    t.textContent = msg;
+    t.classList.add("show");
+    setTimeout(function () { t.classList.remove("show"); }, 2400);
+  }
+
+  function copyTextToClipboard(text, label) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () {
+        showToast("✓ Copied " + (label || "text") + " to clipboard!");
+      });
+    } else {
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+      showToast("✓ Copied " + (label || "text") + " to clipboard!");
+    }
+  }
+
+  function renderLinkedinDay(dayKey) {
+    activeLiDay = dayKey;
+    document.querySelectorAll(".li-day-tab").forEach(function (tab) {
+      tab.classList.toggle("active", tab.getAttribute("data-liday") === dayKey);
+    });
+
+    var container = document.getElementById("liDayContent");
+    var day = LINKEDIN_DAYS[dayKey];
+    if (!container || !day) return;
+
+    var savedChecks = JSON.parse(localStorage.getItem(day.checklistId) || "{}");
+
+    var checklistHtml = '<div class="li-card">' +
+      '<h3>&#x2705; ' + esc(day.title) + ' &middot; Daily Execution Checklist</h3>' +
+      '<p style="color:var(--muted);font-size:0.88rem;margin:0;">' + esc(day.goal) + '</p>' +
+      '<div class="li-checklist">' +
+      day.tasks.map(function (tsk) {
+        var isChecked = !!savedChecks[tsk.id];
+        return '<label class="li-check-label ' + (isChecked ? 'is-checked' : '') + '">' +
+          '<input type="checkbox" data-cid="' + tsk.id + '" ' + (isChecked ? 'checked' : '') + '> ' +
+          '<span>' + esc(tsk.text) + '</span>' +
+        '</label>';
+      }).join("") +
+      '</div></div>';
+
+    var stepsHtml = '<div class="li-card">' +
+      '<h3>&#x1F4CB; Step-by-Step Tactical Instructions &amp; Ready-to-Post Copy</h3>' +
+      '<div class="li-step-grid">' +
+      day.steps.map(function (st, idx) {
+        var actions = '';
+        if (st.copyText) {
+          actions = '<div style="display:flex;justify-content:flex-end;margin-top:6px;">' +
+            '<button type="button" class="copy-btn" data-cidx="' + idx + '">&#x1F4CB; Copy to Clipboard</button>' +
+          '</div>';
+        }
+        return '<div class="li-step-item">' +
+          '<div class="li-step-head">' +
+            '<span class="li-step-title">' + esc(st.title) + '</span>' +
+            '<span class="li-time-tag">' + st.time + '</span>' +
+          '</div>' +
+          '<p style="color:var(--muted);font-size:0.86rem;margin:0;">' + esc(st.desc) + '</p>' +
+          (st.copyText ? '<div class="li-code-block">' + esc(st.copyText) + '</div>' : '') +
+          (st.snippet ? '<div class="li-code-block">' + esc(st.snippet) + '</div>' : '') +
+          actions +
+        '</div>';
+      }).join("") +
+      '</div></div>';
+
+    var toolsHtml = '';
+    if (dayKey === "tools") {
+      toolsHtml = '<div class="li-card">' +
+        '<h3>&#x270D;&#xFE0F; Live 200-Character Outbound Invite Tester</h3>' +
+        '<div class="li-tool-box">' +
+          '<label style="font-family:var(--font-mono);font-size:0.82rem;font-weight:600;color:var(--fg);">' +
+            'Test your LinkedIn connection request note (200 char hard limit):' +
+          '</label>' +
+          '<textarea id="liNoteTester" rows="3" placeholder="Paste or write your note here..." style="font-family:var(--font-body);padding:10px;border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--bg);color:var(--fg);width:100%;resize:vertical;">Loved your recent update on your studio\'s workflow. Building interactive 3D web systems and local booking engines here in India. Would love to follow along with your journey!</textarea>' +
+          '<div class="li-char-bar">' +
+            '<span>Formula: {Context} + {Who you are in 1 line} + {No ask}</span>' +
+            '<span id="liCharCount" class="counter safe">174 / 200 chars</span>' +
+          '</div>' +
+        '</div></div>';
+    }
+
+    container.innerHTML = checklistHtml + stepsHtml + toolsHtml;
+
+    // Attach checklist change handlers
+    container.querySelectorAll('.li-checklist input[type="checkbox"]').forEach(function (cb) {
+      cb.onchange = function () {
+        var cid = cb.getAttribute("data-cid");
+        savedChecks[cid] = cb.checked;
+        localStorage.setItem(day.checklistId, JSON.stringify(savedChecks));
+        cb.parentElement.classList.toggle("is-checked", cb.checked);
+      };
+    });
+
+    // Attach copy button handlers
+    container.querySelectorAll(".copy-btn").forEach(function (btn) {
+      btn.onclick = function () {
+        var idx = parseInt(btn.getAttribute("data-cidx"), 10);
+        var targetText = day.steps[idx].copyText;
+        copyTextToClipboard(targetText, day.steps[idx].title);
+      };
+    });
+
+    // Attach 200-char tester handler if on tools tab
+    var noteTester = document.getElementById("liNoteTester");
+    var charCount = document.getElementById("liCharCount");
+    if (noteTester && charCount) {
+      function updateCharCount() {
+        var len = noteTester.value.length;
+        charCount.textContent = len + " / 200 chars";
+        if (len <= 200) {
+          charCount.className = "counter safe";
+        } else {
+          charCount.className = "counter over";
+        }
+      }
+      noteTester.oninput = updateCharCount;
+      updateCharCount();
+    }
+  }
+
+  document.querySelectorAll(".li-day-tab").forEach(function (tab) {
+    tab.onclick = function () {
+      renderLinkedinDay(tab.getAttribute("data-liday"));
+    };
+  });
+
   render();
+  renderLinkedinDay(activeLiDay);
   switchView(currentView);
   initSync();
 })();
