@@ -2138,6 +2138,496 @@ ul.plain li {
 @media (prefers-reduced-motion: reduce) {
   .bar i { transition: none; }
 }
+
+/* ================================================================
+   LINKEDIN GROWTH ENGINE & SPRINT ROADMAP STYLES
+   ================================================================ */
+.linkedin-wrap {
+  display: grid;
+  gap: 20px;
+}
+
+.li-hero {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  gap: 16px;
+}
+
+.li-hero-head {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.li-badge {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(10, 102, 194, 0.12);
+  color: #0a66c2;
+  border: 1px solid rgba(10, 102, 194, 0.3);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.li-metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+}
+
+.li-metric-card {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.li-metric-card .num {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--fg);
+  line-height: 1.2;
+}
+.li-metric-card .lbl {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+.li-metric-card .sub {
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+
+.li-jump-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  background: var(--bg);
+  border: 1px dashed var(--line);
+  border-radius: var(--radius-md);
+  font-size: 0.88rem;
+  color: var(--muted);
+}
+
+/* LinkedIn Sub-Navigation Tabs */
+.li-subnav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 4px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+}
+.li-subnav-btn {
+  font-family: var(--font-display);
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.li-subnav-btn:hover {
+  background: var(--surface);
+  color: var(--fg);
+}
+.li-subnav-btn.active {
+  background: #0a66c2;
+  color: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+/* Day Tabs for Copy Arsenal */
+.li-day-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-top: 4px;
+}
+.li-day-tab {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 7px 12px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--fg);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.li-day-tab:hover {
+  background: var(--surface-hover);
+  border-color: var(--muted);
+}
+.li-day-tab.active {
+  background: #0a66c2;
+  color: #ffffff;
+  border-color: #0a66c2;
+}
+
+.li-subview {
+  display: grid;
+  gap: 20px;
+}
+.li-subview.is-hidden {
+  display: none !important;
+}
+
+.li-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  gap: 16px;
+}
+.li-card h3 {
+  font-size: 1.22rem;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.li-step-grid {
+  display: grid;
+  gap: 14px;
+}
+.li-step-item {
+  background: var(--bg);
+  border: 1px solid var(--line-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  display: grid;
+  gap: 10px;
+}
+.li-step-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.li-step-title {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--fg);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.li-time-tag {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--muted);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  padding: 2px 8px;
+  border-radius: var(--radius-pill);
+}
+.li-code-block {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  padding: 14px;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  color: var(--fg);
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.copy-btn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  background: #0a66c2;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  transition: all 0.12s ease;
+}
+.copy-btn:hover { background: #084e96; }
+.copy-btn:active { transform: scale(0.96); }
+
+.li-checklist {
+  display: grid;
+  gap: 8px;
+}
+.li-check-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.92rem;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--line-subtle);
+  transition: background 0.15s ease;
+}
+.li-check-label:hover { background: var(--surface-hover); }
+.li-check-label input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  accent-color: #0a66c2;
+  cursor: pointer;
+}
+.li-check-label.is-checked {
+  color: var(--muted);
+  text-decoration: line-through;
+}
+
+.li-tool-box {
+  display: grid;
+  gap: 10px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+.li-char-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+}
+.counter.safe { color: var(--success); font-weight: 600; }
+.counter.over { color: var(--danger); font-weight: 700; }
+
+/* Scoreboard & Tasks in Daily Engine */
+.li-daily-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 22px;
+  align-items: start;
+}
+@media (max-width: 900px) {
+  .li-daily-grid { grid-template-columns: 1fr; }
+}
+
+.counter-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-top: 1px solid var(--line-subtle);
+  gap: 8px;
+}
+.counter-row:first-of-type { border-top: 0; padding-top: 0; }
+.counter-label { font-weight: 600; font-size: 0.92rem; }
+.counter-btns { display: flex; gap: 4px; }
+.counter-btns button {
+  font: inherit;
+  font-family: var(--font-mono);
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--line);
+  background: var(--bg);
+  color: var(--fg);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  transition: all 0.12s ease;
+}
+.counter-btns button:hover { background: var(--surface-hover); border-color: var(--muted); }
+.counter-btns button.plus { background: #0a66c2; color: #fff; border-color: #0a66c2; }
+
+/* Content Calendar Grid */
+.li-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+@media (max-width: 960px) { .li-calendar-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 600px) { .li-calendar-grid { grid-template-columns: 1fr; } }
+
+.cal-day-card {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 160px;
+}
+.cal-day-card.is-today {
+  border-color: #0a66c2;
+  border-width: 2px;
+  background: rgba(10, 102, 194, 0.04);
+}
+.cal-day-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--line-subtle);
+  padding-bottom: 6px;
+}
+.cal-pillar-badge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Milestones List */
+.milestone-list { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+.milestone-item {
+  display: grid;
+  grid-template-columns: 110px minmax(0, 1fr);
+  gap: 14px;
+  align-items: start;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 14px;
+}
+.milestone-date {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #0a66c2;
+  background: rgba(10, 102, 194, 0.1);
+  border: 1px solid rgba(10, 102, 194, 0.2);
+  padding: 5px 8px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+.milestone-content b { display: block; font-size: 0.98rem; color: var(--fg); }
+.milestone-content span { color: var(--muted); font-size: 0.88rem; line-height: 1.45; display: block; margin-top: 3px; }
+
+/* Pillars Grid */
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+.pillar-card {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.pillar-card-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line-subtle);
+}
+
+/* Council agents */
+.agent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+}
+.agent-card {
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  transition: border-color 0.15s ease;
+}
+.agent-card:hover { border-color: #0a66c2; }
+.agent-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line-subtle);
+}
+.agent-num {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 700;
+  background: #0a66c2;
+  color: #fff;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.agent-name { font-weight: 600; font-size: 0.95rem; }
+.agent-desc { font-size: 0.84rem; color: var(--muted); line-height: 1.4; }
+
+/* Toast */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #0a66c2;
+  color: #fff;
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  padding: 10px 18px;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateY(10px);
+  z-index: 9999;
+}
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 </style>
 </head>
 <body>
@@ -2592,8 +3082,8 @@ ul.plain li {
     </section>
   </section>
 
-  <!-- SECTION 6: LINKEDIN DAILY ENGINE & COPY ARSENAL -->
-  <section class="app-section is-hidden" id="sec-linkedin" aria-label="LinkedIn Daily Engine">
+    <!-- SECTION 6: LINKEDIN GROWTH ENGINE & SPRINT ROADMAP -->
+  <section class="app-section is-hidden" id="sec-linkedin" aria-label="LinkedIn Growth Engine">
     <div class="linkedin-wrap">
       
       <!-- LinkedIn Hero & KPI Strip -->
@@ -2617,7 +3107,7 @@ ul.plain li {
           <div class="li-metric-card">
             <span class="lbl">ICP Network</span>
             <span class="num" style="color:var(--success);">10,000</span>
-            <span class="sub">Followers / Network</span>
+            <span class="sub">Followers / Network target</span>
           </div>
           <div class="li-metric-card">
             <span class="lbl">Schedule Block 1</span>
@@ -2632,26 +3122,134 @@ ul.plain li {
         </div>
 
         <div class="li-jump-strip">
-          <span>&#x1F552; LinkedIn is built directly into your daily calendar schedule!</span>
+          <span>&#x1F552; LinkedIn execution is integrated directly into your daily calendar workflow!</span>
           <button type="button" class="btn primary small" id="jumpToCalLiBtn">View Today's LinkedIn Blocks in Calendar &rarr;</button>
         </div>
 
-        <!-- Day Switcher Tabs -->
-        <nav class="li-day-nav" role="tablist" aria-label="LinkedIn Days">
-          <button type="button" class="li-day-tab active" data-liday="day1"><span>Day 1: 14 Clinics Audit</span></button>
-          <button type="button" class="li-day-tab" data-liday="day2"><span>Day 2: 48-Hr 3D Carousel</span></button>
-          <button type="button" class="li-day-tab" data-liday="day3"><span>Day 3: Instagram D2C Teardown</span></button>
-          <button type="button" class="li-day-tab" data-liday="day4"><span>Day 4: AI Booking Engine</span></button>
-          <button type="button" class="li-day-tab" data-liday="day5"><span>Day 5: 10 Walk-In Lessons</span></button>
-          <button type="button" class="li-day-tab" data-liday="day6"><span>Day 6: Clinic No-Show Bot</span></button>
-          <button type="button" class="li-day-tab" data-liday="day7"><span>Day 7: Sunday Sprint Review</span></button>
-          <button type="button" class="li-day-tab" data-liday="tools"><span>Comment &amp; Outbound Arsenal</span></button>
-          <button type="button" class="li-day-tab" data-liday="roadmap"><span>50-Day Content Matrix</span></button>
+        <!-- Sub-Navigation Switcher -->
+        <nav class="li-subnav" role="tablist" aria-label="LinkedIn Engine Subviews">
+          <button type="button" class="li-subnav-btn active" data-lisub="engine"><span>&#x26A1; Daily Engine &amp; Scoreboard</span></button>
+          <button type="button" class="li-subnav-btn" data-lisub="copy"><span>&#x1F4CB; Daily Copy Arsenal</span></button>
+          <button type="button" class="li-subnav-btn" data-lisub="calendar"><span>&#x1F4C5; 7-Day Content Matrix</span></button>
+          <button type="button" class="li-subnav-btn" data-lisub="roadmap"><span>&#x1F5FA;&#xFE0F; 50-Day Sprint Roadmap</span></button>
+          <button type="button" class="li-subnav-btn" data-lisub="metrics"><span>&#x1F4C8; Reach Trajectory &amp; Metrics</span></button>
+          <button type="button" class="li-subnav-btn" data-lisub="council"><span>&#x1F916; Growth Council (7 Agents)</span></button>
         </nav>
       </div>
 
-      <!-- Container for Day Plans -->
-      <div id="liDayContent" class="li-day-container"></div>
+      <!-- SUBVIEW 1: DAILY ENGINE & SCOREBOARD -->
+      <div class="li-subview" id="liSubView-engine">
+        <div class="li-daily-grid">
+          <main>
+            <div class="panel">
+              <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;border-bottom:1px solid var(--line-subtle);padding-bottom:10px;">
+                <h3 id="liDayTitle" style="margin:0;">Today's LinkedIn Execution Routine</h3>
+                <span class="chip cat-linkedin" id="liEngineBadge">0/10 Done</span>
+              </div>
+              <ol class="task-list" id="liTaskList"></ol>
+            </div>
+          </main>
+
+          <aside class="side">
+            <div class="panel">
+              <h3 style="margin-bottom:14px;">Daily Scoreboard</h3>
+              <div id="liDailyCounters"></div>
+              <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--line-subtle);">
+                <label style="font-family:var(--font-mono);font-size:0.78rem;color:var(--muted);font-weight:500;display:block;margin-bottom:6px;">Daily Session Note</label>
+                <input id="liDailyNote" type="text" maxlength="80" placeholder="e.g. Carousel got 4.2k views, 3 DMs"
+                  style="width:100%;font:inherit;font-size:0.88rem;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-sm);padding:7px 10px;">
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <!-- SUBVIEW 2: DAILY COPY ARSENAL -->
+      <div class="li-subview is-hidden" id="liSubView-copy">
+        <div class="panel">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px;border-bottom:1px solid var(--line-subtle);padding-bottom:12px;">
+            <div>
+              <h3 style="margin:0;">Tactical Step-by-Step Plans &amp; Ready-to-Drop Copy</h3>
+              <p style="color:var(--muted);font-size:0.86rem;margin:3px 0 0;">Each day engineered with hook algorithms, odd-precision numbers, and zero AI fluff.</p>
+            </div>
+            <span class="li-badge">One-Click Copy Ready</span>
+          </div>
+
+          <!-- Day Switcher Tabs -->
+          <nav class="li-day-nav" role="tablist" aria-label="LinkedIn Days">
+            <button type="button" class="li-day-tab active" data-liday="day1"><span>Day 1: 14 Clinics Audit</span></button>
+            <button type="button" class="li-day-tab" data-liday="day2"><span>Day 2: 48-Hr 3D Carousel</span></button>
+            <button type="button" class="li-day-tab" data-liday="day3"><span>Day 3: Instagram D2C Teardown</span></button>
+            <button type="button" class="li-day-tab" data-liday="day4"><span>Day 4: AI Booking Engine</span></button>
+            <button type="button" class="li-day-tab" data-liday="day5"><span>Day 5: 10 Walk-In Lessons</span></button>
+            <button type="button" class="li-day-tab" data-liday="day6"><span>Day 6: Clinic No-Show Bot</span></button>
+            <button type="button" class="li-day-tab" data-liday="day7"><span>Day 7: Sunday Sprint Review</span></button>
+            <button type="button" class="li-day-tab" data-liday="tools"><span>Comment &amp; Outbound Arsenal</span></button>
+          </nav>
+
+          <div id="liDayContent" class="li-day-container" style="margin-top:20px;"></div>
+        </div>
+      </div>
+
+      <!-- SUBVIEW 3: 7-DAY CONTENT CALENDAR -->
+      <div class="li-subview is-hidden" id="liSubView-calendar">
+        <div class="panel">
+          <div style="margin-bottom:18px;border-bottom:1px solid var(--line-subtle);padding-bottom:12px;">
+            <h3 style="margin:0 0 6px;">7-Day Content Pillars &amp; Matrix</h3>
+            <p style="color:var(--muted);font-size:0.88rem;margin:0;">The core 4-pillar portfolio balancing viral reach with high-ticket positioning.</p>
+          </div>
+
+          <div class="pillar-grid" id="liPillarGrid"></div>
+
+          <h3 style="margin:24px 0 12px;">7-Day Weekly Publishing Matrix</h3>
+          <div class="li-calendar-grid" id="liCalendarGrid"></div>
+        </div>
+      </div>
+
+      <!-- SUBVIEW 4: SPRINT ROADMAP -->
+      <div class="li-subview is-hidden" id="liSubView-roadmap">
+        <div class="panel">
+          <div style="margin-bottom:18px;border-bottom:1px solid var(--line-subtle);padding-bottom:12px;">
+            <h3 style="margin:0 0 6px;">50-Day Sprint Roadmap &middot; 4 Phases to 1M Reach</h3>
+            <p style="color:var(--muted);font-size:0.88rem;margin:0;">Timeline: Oct 9 – Nov 30 &middot; Systematic audience aggregation and monetization.</p>
+          </div>
+
+          <div class="stats-grid" id="liRoadmapStats"></div>
+
+          <h3 style="margin:20px 0 14px;">Key Milestones &amp; Deliverables</h3>
+          <ol class="milestone-list" id="liMilestoneList"></ol>
+        </div>
+      </div>
+
+      <!-- SUBVIEW 5: REACH TRAJECTORY & METRICS -->
+      <div class="li-subview is-hidden" id="liSubView-metrics">
+        <div class="panel">
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:18px;border-bottom:1px solid var(--line-subtle);padding-bottom:12px;">
+            <h3 style="margin:0;">Growth Velocity &amp; Cumulative Trajectory</h3>
+            <span class="li-badge">&#x1F4C8; 1,000,000 Horizon</span>
+          </div>
+
+          <div class="stats-grid" id="liMetricsStats"></div>
+
+          <h3 style="margin:22px 0 12px;">Weekly Growth Velocity</h3>
+          <div class="sparkline-row" id="liSparklines"></div>
+
+          <h3 style="margin:24px 0 12px;">Cumulative Reach Trajectory (Oct 9 – Nov 30)</h3>
+          <div id="liCumulativeChart" style="background:var(--bg);border:1px solid var(--line);border-radius:var(--radius-md);padding:14px 10px;"></div>
+        </div>
+      </div>
+
+      <!-- SUBVIEW 6: GROWTH COUNCIL (7 AGENTS) -->
+      <div class="li-subview is-hidden" id="liSubView-council">
+        <div class="panel">
+          <div style="margin-bottom:18px;border-bottom:1px solid var(--line-subtle);padding-bottom:12px;">
+            <h3 style="margin:0 0 6px;">Autonomous Multi-Agent Growth Council</h3>
+            <p style="color:var(--muted);font-size:0.88rem;margin:0;">7 dedicated intelligence agents orchestrating content, engagement, outbound, and analytics.</p>
+          </div>
+
+          <div class="agent-grid" id="liAgentGrid"></div>
+        </div>
+      </div>
 
     </div>
   </section>
@@ -3797,7 +4395,735 @@ ul.plain li {
     renderWorkoutContent(activeWorkoutTab || "push");
   }
 
+
+  /* ================================================================
+     LINKEDIN GROWTH ENGINE DATA & LOGIC (INTEGRATED)
+     ================================================================ */
+  var LI_KEY = "linkedin-growth-engine-v1";
+
+  var liState = (function () {
+    try {
+      var raw = localStorage.getItem(LI_KEY);
+      if (raw) return JSON.parse(raw);
+    } catch (e) {}
+    return { counters: {}, tasks: {}, notes: {} };
+  })();
+
+  function saveLiState() {
+    liState._timestamp = Date.now();
+    localStorage.setItem(LI_KEY, JSON.stringify(liState));
+  }
+
+  function getLiTodayKey() {
+    var now = new Date();
+    var adj = new Date(now.getTime() - 4 * 3600 * 1000);
+    return adj.getFullYear() + "-" + String(adj.getMonth() + 1).padStart(2, "0") + "-" + String(adj.getDate()).padStart(2, "0");
+  }
+
+  var LI_DAILY_TASKS = [
+    { time: "07:30 – 08:00", title: "Create & Queue Post #1 (Teardown/Carousel)", cat: "content", note: "High-dwell document post or contrarian breakdown. Hook <= 6 words." },
+    { time: "08:00 – 08:15", title: "Publish Post #1 + Golden Hour Prep", cat: "content", note: "Hit publish. Prepare to reply to every comment in first 60 minutes." },
+    { time: "08:15 – 09:30", title: "15 Authority Comments on Target Creators", cat: "engage", note: "Comment on top creators within 15 min of their drop. Add a new noun or concrete number." },
+    { time: "09:30 – 10:00", title: "Reply to Thread Comments on Your Post", cat: "engage", note: "Golden hour velocity boost. Respond to every comment with an open question." },
+    { time: "13:00 – 13:30", title: "Midday LinkedIn Drop / Check-in", cat: "linkedin", note: "Calendar Block 1: Drop today's scheduled post + 15 comment blitz." },
+    { time: "14:00 – 15:00", title: "Draft Tomorrow's Teardown or Slides", cat: "content", note: "Lock down screenshots, Figma slides, or clinic teardown numbers." },
+    { time: "20:00 – 21:00", title: "Evening Thread Cleanup", cat: "engage", note: "Reply to second-wave comments and inbound notifications." },
+    { time: "21:30 – 22:00", title: "20 Targeted Connection Notes (<200 chars)", cat: "outbound", note: "Calendar Block 2: Personalized invites to local clinic owners and founders." },
+    { time: "22:00 – 22:30", title: "Inbound DM Triage & Lead Handling", cat: "outbound", note: "Triage into Lead, Peer, Ask, Spam. Send calendar demo link to warm leads." },
+    { time: "22:30 – 23:00", title: "Log Reach Multiple & Set Tomorrow Queue", cat: "grow", note: "Check 24-hr impressions, connection accept rate, and profile views." }
+  ];
+
+  var LI_COUNTERS_CONFIG = [
+    { id: "posts", label: "Posts Dropped", goal: 1, icon: "📝" },
+    { id: "comments", label: "Authority Comments", goal: 15, icon: "💬" },
+    { id: "connections", label: "Outbound Notes (<200 char)", goal: 20, icon: "🤝" },
+    { id: "replies", label: "Thread Replies Given", goal: 10, icon: "↩️" },
+    { id: "dmTriaged", label: "DMs Handled / Triaged", goal: 5, icon: "📨" }
+  ];
+
+  var LINKEDIN_DAYS = {
+    day1: {
+      title: "Day 1: Authority Launch & The 14 Clinics Audit",
+      date: "Oct 10 (Day 1)",
+      goal: "Establish boots-on-the-ground proof, lock down profile conversion rate, and ignite golden hour engagement.",
+      checklistId: "li-checks-day1",
+      tasks: [
+        { id: "c1", text: "Lockdown Profile: Update 218-char Headline & 7-Step About section" },
+        { id: "c2", text: "Drop Post #1 between 5:30 PM - 7:30 PM (Medical Clinics Teardown)" },
+        { id: "c3", text: "Execute Golden Hour: 5 high-depth comments on agency/tech creator posts" },
+        { id: "c4", text: "Thread Defense (8:30 PM): Answer every comment under Post #1 with an open question" }
+      ],
+      steps: [
+        {
+          time: "Step 1 · 5:00 PM",
+          title: "Profile Conversion Setup",
+          desc: "Your profile is a landing page. Headline uses all 218 chars, About section hooks before 260 chars.",
+          snippet: 'Headline: Creative Technologist & Systems Architect | Building High-Impact 3D Web & AI Booking Systems That Turn Invisible Businesses Into Market Leaders | 48-Hour Rapid Delivery | DM "DEMO"'
+        },
+        {
+          time: "Step 2 · 5:30 PM - 7:30 PM",
+          title: "Drop Post #1 (14 Medical Clinics Teardown)",
+          desc: "Formula: F7 Odd-Precision Money Ledger + F10 Contrarian Boots-on-the-Ground. 100% humanized, zero AI slop.",
+          copyText: "I walked into 14 medical clinics last week.\n\n60% of them bleed patients after 7:00 PM for one stupid reason:\n\nTheir receptionists go home.\n\nThink about how a normal person books a doctor, a dental checkup, or a physio session.\nThey don't do it at 11:00 AM while sitting in meetings.\nThey do it at 9:30 PM from their couch when their tooth or back starts acting up.\n\nThey search Google.\nThey find the clinic.\nThey see: \"Call to book.\"\n\nThey call. Nobody picks up.\nThey close the tab, find the next clinic with a 24/7 online calendar, and book there in 45 seconds.\n\nThat is ₹25,000 to ₹50,000 in monthly patient value vanishing in thin air. Not because the doctor isn't world-class.\nSimply because the clinic is running on a 2012 communication setup.\n\nAt 20, while everyone is building another generic AI wrapper, I've been walking into local businesses looking at where the actual pipe is leaking.\n\nHere is the 3-part infrastructure every service business needs today:\n\n1. A 3D or high-impact modern front-end that proves instant authority in 3 seconds.\n2. A frictionless self-serve booking calendar integrated into Google Maps.\n3. WhatsApp confirmation & reminder automations so no-show rates drop to near zero.\n\nStop trying to fix a leaky bucket with more marketing spend.\nFix the booking pipe first.\n\nIf you run a clinic or service business, what is your biggest bottleneck right now: getting new inquiries, or handling the ones you already have?\n\nP.S. Dropping a full teardown of the 48-hour clinic booking architecture this week. Connect or follow along if you want the breakdown."
+        },
+        {
+          time: "Step 3 · 6:00 PM - 7:00 PM",
+          title: "Golden Hour Creator Comment Blitz (5 Comments)",
+          desc: "Find 5 posts published in the last 2 hours by 20k-100k creators. Add a concrete number or new noun to get pinned.",
+          copyText: "The tools-versus-custom argument misses one operational variable.. dwell time.\n\nWhen everyone uses flat templates, average session duration is under 15 seconds. Adding interactive 3D scroll shaders pushed our test builds past 50+ seconds without hurting mobile load speeds.\n\nCurious if you are seeing clients prioritize visual retention over standard templates yet?"
+        }
+      ]
+    },
+    day2: {
+      title: "Day 2: High-Dwell Carousel & Outbound Expansion",
+      date: "Oct 11 (Day 2)",
+      goal: "Hold users on screen for 60+ seconds with a document post (carousel) + 20 personalized connection notes.",
+      checklistId: "li-checks-day2",
+      tasks: [
+        { id: "c2_1", text: "Export Carousel 8-Slide PDF from Figma/Canva" },
+        { id: "c2_2", text: "Drop Post #2 (Document Post) at 8:30 AM or 1:00 PM" },
+        { id: "c2_3", text: "Creator Hijack: 10 targeted comments on top agency and design leaders" },
+        { id: "c2_4", text: "Outbound Network Sprint: Send 20 bespoke connection notes (<200 chars) to founders" },
+        { id: "c2_5", text: "Evening Thread Cleanup: Reply to all carousel commenters" }
+      ],
+      steps: [
+        {
+          time: "Step 1 · 8:30 AM / 1:00 PM",
+          title: "Drop Carousel: Why Flat Websites Bleed Customers",
+          desc: "Upload 8-slide PDF. Carousels trigger LinkedIn's highest tier dwell-time algorithm.",
+          copyText: "The average visitor leaves your website in 2.8 seconds.\n\nIf you look like a ₹500 WordPress template, you get treated like one.\n\nI broke down why standard 2D websites bleed attention.. and how 48-hour interactive 3D systems 3x user dwell time.\n\n8 slides. Swipe through the teardown below ->"
+        },
+        {
+          time: "Step 2 · 8-Slide Script Breakdown",
+          title: "Carousel Slides Copy (Ready to export to PDF)",
+          desc: "Slide 1 is 80% of the result. Keep each slide under 25 words.",
+          snippet: "[Slide 1 - Cover]: Flat Websites Are Dead in 2026. (Swipe to see what replaces them ->)\n[Slide 2 - The Stake]: The average visitor decides in 2.8 seconds. If your site looks generic, your authority is zero.\n[Slide 3 - The Problem]: Flat text + stock photos = 80% bounce rate. Visitors feel nothing.\n[Slide 4 - The 3D Fix]: Interactive WebGL & scroll shaders hold attention for 50+ seconds. Dwell time = trust.\n[Slide 5 - The Speed Myth]: Myth: 3D takes 3 months. Reality: Modern workflows ship in 48 to 72 hours.\n[Slide 6 - The System]: Stunning visuals stop the scroll. Automated booking & WhatsApp close the sale.\n[Slide 7 - Cheat Sheet]: 1. 3D WebGL Hero | 2. Lightweight Shaders | 3. 24/7 Booking Engine | 4. WhatsApp Automation\n[Slide 8 - CTA]: Turn your presence into a client-booking engine. Follow @Vansh Kumar. DM \"3D\" for live demos."
+        },
+        {
+          time: "Step 3 · 1:30 PM",
+          title: "Outbound Connection Sprint (20 Notes)",
+          desc: "Target local clinic operators, tech founders, and agency owners. Must stay under 200 characters.",
+          copyText: "Loved your recent update on your studio's workflow. Building interactive 3D web systems and local booking engines here in India. Would love to follow along with your journey!"
+        }
+      ]
+    },
+    day3: {
+      title: "Day 3: The Viral D2C Teardown & Inbound Harvest",
+      date: "Oct 12 (Day 3)",
+      goal: "Ignite intense engagement from Instagram sellers, marketers, and operators on the 'PP in DM' nightmare.",
+      checklistId: "li-checks-day3",
+      tasks: [
+        { id: "c3_1", text: "Drop Post #3 at 1:30 PM (The Instagram PP in DM Trap)" },
+        { id: "c3_2", text: "E-Commerce Comment Blitz: Engage on 10 posts under #ecommerce and #d2c" },
+        { id: "c3_3", text: "Triage Inbound Inbox: Sort requests into Lead / Peer / Spam" },
+        { id: "c3_4", text: "Log 3-Day Reach Multiple and profile view delta" }
+      ],
+      steps: [
+        {
+          time: "Step 1 · 1:30 PM",
+          title: "Drop Post #3 (The 'PP in DM' Instagram Trap)",
+          desc: "Formula: F18 False Binary + F19 Anecdote-Meets-Evidence. High shares and emotional resonance.",
+          copyText: "The biggest scam in Instagram e-commerce is the phrase \"PP in DM\" (Price Please).\n\nEvery single day, thousands of boutique clothing, jewelry, and lifestyle brands spend 4+ hours doing this:\n\n1. Post a new product reel.\n2. Get 50 comments asking \"Price?\"\n3. Manually DM: \"Hey dear, it is ₹1,499 + shipping.\"\n4. Wait for them to ask for payment details.\n5. Manually send UPI QR code.\n6. Wait for a screenshot of the payment receipt.\n\nIt is 2026. This isn't commerce. It is manual data entry.\n\nHere is the brutal math:\nFor every hour a seller takes to reply to that \"PP\" comment, purchase intent drops by 50%.\nBy the time you reply 3 hours later, the customer has bought from someone else.\n\nWhat happens when you deploy an automated storefront funnel:\n• Comment trigger sends instant product link & checkout directly in WhatsApp/Instagram.\n• Customer sees inventory, picks their size, and checks out in 60 seconds via UPI.\n• Order is logged, confirmation sent, tracking auto-generated.\n\nStop paying with your time for bottlenecks that a simple automated system solves in 24 hours.\n\nIf you sell on Instagram, how much of your day goes into manually replying to prices and orders?"
+        },
+        {
+          time: "Step 2 · 2:00 PM - 3:00 PM",
+          title: "E-Commerce Authority Comments",
+          desc: "Use under top posts talking about Shopify, D2C acquisition, or Instagram sales.",
+          copyText: "The 'PP in DM' workflow is the single biggest conversion killer on Instagram.\n\nEvery hour of delay between a comment and a manual DM drops purchase intent by half. Automating the checkout trigger directly to WhatsApp changes that entire unit economics equation."
+        }
+      ]
+    },
+    day4: {
+      title: "Day 4: AI Booking Engine Architectural Blueprint",
+      date: "Oct 13 (Day 4)",
+      goal: "Demonstrate deep technical competence by dissecting the end-to-end 24/7 clinic calendar architecture.",
+      checklistId: "li-checks-day4",
+      tasks: [
+        { id: "c4_1", text: "Drop Post #4: Visual system flow diagram + breakdown" },
+        { id: "c4_2", text: "Comment on 10 AI automation and agency operator posts" },
+        { id: "c4_3", text: "Send 20 outbound notes to dental and aesthetic clinic owners" }
+      ],
+      steps: [
+        {
+          time: "1:00 PM",
+          title: "Post #4: The 4-Node Booking Architecture",
+          desc: "Technical authority breakdown that founders love to bookmark and save.",
+          copyText: "Most businesses try to solve lead booking with more salespeople.\n\nSmart operators build this 4-node pipeline once:\n\nNode 1: WebGL/3D hero section stops the scroll in 2.8s.\nNode 2: Cal.com / custom slots synced live with Google Calendar.\nNode 3: Webhook fires to WhatsApp Business API within 300ms.\nNode 4: T-24h & T-2h automated reminder sequences reduce no-shows by 78%.\n\nTotal build time: 48 hours.\nTotal recurring cost: Less than ₹2,000/month.\n\nStop hiring receptionists to do what a webhook does in 300 milliseconds."
+        }
+      ]
+    },
+    day5: {
+      title: "Day 5: 10 Walk-In Lessons from the Street",
+      date: "Oct 14 (Day 5)",
+      goal: "Share raw field observations from 50+ in-person walk-in business discovery conversations.",
+      checklistId: "li-checks-day5",
+      tasks: [
+        { id: "c5_1", text: "Drop Post #5: Street-level observations from 14:00 - 19:00 walk-ins" },
+        { id: "c5_2", text: "Engage with sales leaders and agency founders" },
+        { id: "c5_3", text: "Follow up on all warm connections from Days 1-4" }
+      ],
+      steps: [
+        {
+          time: "1:00 PM",
+          title: "Post #5: What 50 In-Person Walk-Ins Taught Me About Indian SMBs",
+          desc: "Raw, human, unfiltered field report. High resonance with founders.",
+          copyText: "I spend 2:00 PM to 7:00 PM every day walking into local businesses.\n\nNot sending cold emails. Literally opening doors and talking to owners.\n\nHere are 3 truths no digital marketing guru will admit:\n\n1. Business owners don't care about 'SEO' or 'Web3'. They care about the phone ringing between 2 PM and 5 PM.\n2. Almost all of them have been burned by a ₹5,000 WordPress freelancer who ghosted them.\n3. Trust is built in the first 90 seconds by diagnosing their actual bottleneck, not by pitching a service.\n\nWhen you solve a real operational headache, price is never the objection."
+        }
+      ]
+    },
+    day6: {
+      title: "Day 6: Clinic No-Show Bot Case Study",
+      date: "Oct 15 (Day 6)",
+      goal: "Break down unit economics of clinic cancellations and the exact WhatsApp fix.",
+      checklistId: "li-checks-day6",
+      tasks: [
+        { id: "c6_1", text: "Drop Post #6: Clinic No-Show breakdown with before/after metrics" },
+        { id: "c6_2", text: "Outbound to 20 healthcare and wellness founders" }
+      ],
+      steps: [
+        {
+          time: "1:00 PM",
+          title: "Post #6: How a Single WhatsApp Trigger Saved ₹1.2L in Cancelled Appointments",
+          desc: "Case study format with specific numbers and verifiable workflows.",
+          copyText: "A dental clinic loses an average of 4 appointments per week to simple forgetfulness.\n\nAt ₹1,500 average procedure value, that is ₹24,000/month in pure profit wiped out.\n\nWe deployed a 2-step WhatsApp automation:\n1. Instant calendar confirmation on booking.\n2. T-3h interactive reminder with a 1-tap 'Confirm / Reschedule' button.\n\nResult: No-show rate dropped from 22% to under 4% in 14 days.\n\nWhat is the cost of no-shows in your business right now?"
+        }
+      ]
+    },
+    day7: {
+      title: "Day 7: Sunday Sprint Review & Week 1 Retrospective",
+      date: "Oct 16 (Day 7)",
+      goal: "Synthesize Week 1 metrics, celebrate milestones, and preview Week 2 expansion.",
+      checklistId: "li-checks-day7",
+      tasks: [
+        { id: "c7_1", text: "Compile 7-day impressions, profile views, and follower count" },
+        { id: "c7_2", text: "Drop Post #7: Open-source Week 1 learnings and numbers" },
+        { id: "c7_3", text: "Queue up Week 2 content calendar" }
+      ],
+      steps: [
+        {
+          time: "11:00 AM",
+          title: "Post #7: Week 1 Sprint Audit (Unfiltered Numbers)",
+          desc: "Radical transparency post sharing reach metrics and audience velocity.",
+          copyText: "Week 1 of the 50-day sprint is in the books.\n\nHere are the raw numbers:\n• Posts published: 6\n• Impressions generated: 42,000+\n• Targeted connection notes sent: 120\n• Qualified inbound conversations: 8\n\nThe biggest takeaway: Specificity beats volume every single time.\n\nMoving into Week 2: Scaling visual carousels and outbound pipeline."
+        }
+      ]
+    },
+    tools: {
+      title: "Growth Toolkit: Comment Templates & 200-Char Outbound Tester",
+      date: "Daily Utility",
+      goal: "Use these weapons every day to hijack authority and maintain a 45%+ connection accept rate.",
+      checklistId: "li-checks-tools",
+      tasks: [
+        { id: "ct_1", text: "Target 15 creator posts daily using the 3 comment formulas" },
+        { id: "ct_2", text: "Verify connection notes stay strictly under 200 characters with the tool below" },
+        { id: "ct_3", text: "Reply to all inbound leads within 2 hours" }
+      ],
+      steps: [
+        {
+          time: "Template A",
+          title: "The 'Field Receipt' (Agency / Tech / Design posts)",
+          desc: "Introduces dwell time and concrete 48-hour build metrics.",
+          copyText: "The tools-versus-custom argument misses one operational variable.. dwell time.\n\nWhen everyone uses flat templates, average session duration is under 15 seconds. Adding interactive 3D scroll shaders pushed our test builds past 50+ seconds without hurting mobile load speeds.\n\nCurious if you are seeing clients prioritize visual retention over standard templates yet?"
+        },
+        {
+          time: "Template B",
+          title: "The 'Local Bottleneck' (Clinic / Service / Business posts)",
+          desc: "Calls out the 7 PM after-hours lead drop-off.",
+          copyText: "Spot on regarding communication lag, but the biggest leak is after hours.\n\nWhen auditing local clinics last week, over 60% of appointment intent hit after 7:00 PM when reception was off the clock. If there isn't a 24/7 calendar sync, that revenue just evaporates to whoever has an instant booking link."
+        },
+        {
+          time: "Template C",
+          title: "The 'D2C Friction Callout' (E-Commerce / D2C posts)",
+          desc: "Calls out manual DM order chaos.",
+          copyText: "The 'PP in DM' workflow is the single biggest conversion killer on Instagram.\n\nEvery hour of delay between a comment and a manual DM drops purchase intent by half. Automating the checkout trigger directly to WhatsApp changes that entire unit economics equation."
+        }
+      ]
+    }
+  };
+
+  var LI_PILLARS = [
+    { name: "Contrarian Teardowns", pct: "40%", tag: "cat-audit", desc: "Local business bottlenecks, leaky funnels, 14 medical clinics audit, D2C 'PP in DM' chaos." },
+    { name: "Systems & 3D Web", pct: "30%", tag: "cat-linkedin", desc: "Interactive 3D WebGL, 48-hour rapid builds, lightweight scroll shaders, high-dwell mechanics." },
+    { name: "Field Notes & BTS", pct: "20%", tag: "cat-walk", desc: "Daily 2-7 PM walk-in lessons, street-level sales psychology, zero-fluff agency operations." },
+    { name: "Founder Mindset", pct: "10%", tag: "cat-grow", desc: "20-year-old builder discipline, 50-day sprint execution, physical recomp, no-scroll focus." }
+  ];
+
+  var LI_CALENDAR_DAYS = [
+    { day: "Mon", date: "Oct 12", theme: "Clinic Leak", type: "Text Teardown", hook: "14 Medical Clinics bleed patients after 7 PM", pillar: "Teardowns" },
+    { day: "Tue", date: "Oct 13", theme: "3D vs Flat", type: "8-Slide Carousel", hook: "Flat websites are dead in 2026", pillar: "Systems" },
+    { day: "Wed", date: "Oct 14", theme: "D2C Friction", type: "Viral Essay", hook: "The 'PP in DM' Instagram trap", pillar: "Teardowns" },
+    { day: "Thu", date: "Oct 15", theme: "Booking Engine", type: "System Blueprint", hook: "The 4-node 24/7 booking pipeline", pillar: "Systems" },
+    { day: "Fri", date: "Oct 16", theme: "Walk-In Lessons", type: "Field Report", hook: "What 50 in-person doors taught me about sales", pillar: "Field Notes" },
+    { day: "Sat", date: "Oct 17", theme: "No-Show Bot", type: "Case Study", hook: "How WhatsApp triggers saved ₹1.2L in clinics", pillar: "Systems" },
+    { day: "Sun", date: "Oct 18", theme: "Sprint Audit", type: "Retrospective", hook: "Week 1 sprint review & unfiltered numbers", pillar: "Mindset" }
+  ];
+
+  var LI_ROADMAP_PHASES = [
+    { week: "Week 1–2", date: "Oct 9 – Oct 22", target: "100k Imp · 1.5k Followers", desc: "Foundation & Proof: 14 Clinics teardown, 3D carousel launch, profile conversion rate lockdown to 8%+." },
+    { week: "Week 3–4", date: "Oct 23 – Nov 5", target: "350k Imp · 4.0k Followers", desc: "Viral Expansion: D2C workflows, WhatsApp automations, authority hijacking on 50k+ creator threads." },
+    { week: "Week 5–6", date: "Nov 6 – Nov 19", target: "650k Imp · 7.0k Followers", desc: "Inbound Pipeline Acceleration: 20 targeted connection notes/day, automated case studies, client booking demos." },
+    { week: "Week 7–8", date: "Nov 20 – Nov 30", target: "1,000,000 Imp · 10,000 Followers", desc: "Sprint Summit: Grand sprint retrospective, client transformation showcases, high-ticket inbound engine established." }
+  ];
+
+  var LI_COUNCIL_AGENTS = [
+    { num: "01", name: "Growth Director", role: "Sprint Strategy & North Star", desc: "Orchestrates the 50-day sprint towards 1M impressions and 10k followers. Audits daily reach velocity." },
+    { num: "02", name: "Voice & Ghostwriter", role: "Copy Engineering", desc: "Drafts punchy, contrarian hooks and odd-precision teardowns. Strips out all generic AI patterns." },
+    { num: "03", name: "Engagement Specialist", role: "Golden Hour Blitz", desc: "Identifies top 15 creator posts daily and formulates high-depth comments that get pinned and drive profile visits." },
+    { num: "04", name: "Visual & Carousel Architect", role: "High-Dwell Assets", desc: "Designs 8-slide PDF carousels and interactive 3D WebGL screen captures that hold attention for 60+ seconds." },
+    { num: "05", name: "Outbound Pipeline Engineer", role: "ICP Acquisition", desc: "Curates 20 hyper-targeted local business prospects daily and crafts bespoke <200 character connection notes." },
+    { num: "06", name: "Analytics & Trend Sentinel", role: "Post-Mortem Metrics", desc: "Tracks 24-hr reach multiples, follower net adds, comment ratios, and flags algorithm shifts." },
+    { num: "07", name: "Culture & Trend Strategist", role: "Viral Angle Hijacking", desc: "Monitors real-time conversations in Indian tech, clinic operations, and D2C commerce to hijack relevant trends." }
+  ];
+
+  var activeLiSubView = "engine";
+  var activeLiDay = "day1";
+
+  function showLiToast(msg) {
+    var t = document.getElementById("liToast");
+    if (!t) {
+      t = document.createElement("div");
+      t.id = "liToast";
+      t.className = "toast";
+      document.body.appendChild(t);
+    }
+    t.textContent = msg;
+    t.classList.add("show");
+    setTimeout(function () { t.classList.remove("show"); }, 2400);
+  }
+
+  function copyLiText(text, label) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () {
+        showLiToast("✓ Copied " + (label || "copy") + " to clipboard!");
+      });
+    } else {
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+      showLiToast("✓ Copied " + (label || "copy") + " to clipboard!");
+    }
+  }
+
+  function switchLiSubView(subName) {
+    activeLiSubView = subName;
+    document.querySelectorAll(".li-subnav-btn").forEach(function (btn) {
+      btn.classList.toggle("active", btn.getAttribute("data-lisub") === subName);
+    });
+    var subviews = {
+      engine: document.getElementById("liSubView-engine"),
+      copy: document.getElementById("liSubView-copy"),
+      calendar: document.getElementById("liSubView-calendar"),
+      roadmap: document.getElementById("liSubView-roadmap"),
+      metrics: document.getElementById("liSubView-metrics"),
+      council: document.getElementById("liSubView-council")
+    };
+    Object.keys(subviews).forEach(function (k) {
+      if (subviews[k]) subviews[k].classList.toggle("is-hidden", k !== subName);
+    });
+
+    if (subName === "copy") {
+      renderLinkedinDay(activeLiDay);
+    } else if (subName === "calendar") {
+      renderLiContentCalendar();
+    } else if (subName === "roadmap") {
+      renderLiSprintRoadmap();
+    } else if (subName === "metrics") {
+      renderLiMetrics();
+    } else if (subName === "council") {
+      renderLiCouncil();
+    }
+  }
+
+  function renderLiTasks() {
+    var listEl = document.getElementById("liTaskList");
+    if (!listEl) return;
+    var tk = getLiTodayKey();
+    if (!liState.tasks[tk]) liState.tasks[tk] = {};
+    var taskMap = liState.tasks[tk];
+
+    var now = new Date();
+    var curHour = now.getHours();
+
+    var doneCount = 0;
+    var html = "";
+
+    LI_DAILY_TASKS.forEach(function (t, idx) {
+      var status = taskMap[idx] || "pending";
+      if (status === "done") doneCount++;
+
+      var startHour = parseInt(t.time.split(":")[0], 10);
+      var endPart = t.time.split("–")[1] || t.time.split("–")[0];
+      var endHour = parseInt(endPart.trim().split(":")[0], 10);
+      var isNow = (curHour >= startHour && curHour < endHour);
+
+      var blockClass = "task-block";
+      if (status === "done") blockClass += " completed";
+      else if (status === "missed") blockClass += " missed";
+      else if (isNow) blockClass += " is-now";
+
+      var catClass = "cat-linkedin";
+      if (t.cat === "content") catClass = "cat-audit";
+      else if (t.cat === "engage") catClass = "cat-walk";
+      else if (t.cat === "outbound") catClass = "cat-mail";
+      else if (t.cat === "grow") catClass = "cat-grow";
+
+      html += '<li class="' + blockClass + '" data-lidx="' + idx + '">' +
+        '<div class="task-time">' +
+          '<span>' + t.time.replace("–", "→") + '</span>' +
+          (isNow ? '<em>Now</em>' : '') +
+        '</div>' +
+        '<div class="task-content">' +
+          '<div class="task-title">' +
+            esc(t.title) +
+            ' <span class="chip ' + catClass + '">' + t.cat.toUpperCase() + '</span>' +
+          '</div>' +
+          '<div class="task-note">' + esc(t.note) + '</div>' +
+        '</div>' +
+        '<div class="task-actions">' +
+          '<button type="button" class="check-btn done-btn' + (status === "done" ? " active-done" : "") + '" data-lidx="' + idx + '" data-action="done">✓ Done</button>' +
+          '<button type="button" class="check-btn miss-btn' + (status === "missed" ? " active-miss" : "") + '" data-lidx="' + idx + '" data-action="missed">✕ Missed</button>' +
+        '</div>' +
+      '</li>';
+    });
+
+    listEl.innerHTML = html;
+
+    var badge = document.getElementById("liEngineBadge");
+    if (badge) badge.textContent = doneCount + " / " + LI_DAILY_TASKS.length + " Done";
+
+    listEl.querySelectorAll(".check-btn").forEach(function (btn) {
+      btn.onclick = function () {
+        var idx = parseInt(btn.getAttribute("data-lidx"), 10);
+        var action = btn.getAttribute("data-action");
+        if (taskMap[idx] === action) {
+          delete taskMap[idx];
+        } else {
+          taskMap[idx] = action;
+        }
+        saveLiState();
+        renderLiTasks();
+      };
+    });
+  }
+
+  function renderLiScoreboard() {
+    var cEl = document.getElementById("liDailyCounters");
+    if (!cEl) return;
+    var tk = getLiTodayKey();
+    if (!liState.counters[tk]) liState.counters[tk] = {};
+    var dc = liState.counters[tk];
+
+    var html = "";
+    LI_COUNTERS_CONFIG.forEach(function (cfg) {
+      var val = dc[cfg.id] || 0;
+      var pct = Math.min(100, Math.round((val / cfg.goal) * 100));
+      var isComplete = val >= cfg.goal;
+
+      html += '<div class="counter-row">' +
+        '<div style="flex:1;min-width:0;">' +
+          '<div class="counter-label">' + cfg.icon + ' ' + cfg.label + '</div>' +
+          '<div class="bar-track" style="height:7px;border-radius:99px;background:var(--line-subtle);margin-top:6px;overflow:hidden;">' +
+            '<span class="bar-fill' + (isComplete ? ' complete' : '') + '" style="display:block;height:100%;border-radius:99px;background:' + (isComplete ? 'var(--success)' : 'var(--linkedin)') + ';width:' + pct + '%;transition:width 0.3s ease;"></span>' +
+          '</div>' +
+          '<div style="display:flex;justify-content:space-between;margin-top:4px;font-size:0.76rem;color:var(--muted);font-family:var(--font-mono);">' +
+            '<span>' + val + ' / ' + cfg.goal + ' target</span>' +
+            '<span>' + pct + '%</span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="counter-btns">' +
+          '<button type="button" data-licounter="' + cfg.id + '" data-delta="-1">−</button>' +
+          '<button type="button" class="plus" data-licounter="' + cfg.id + '" data-delta="1">+</button>' +
+        '</div>' +
+      '</div>';
+    });
+
+    cEl.innerHTML = html;
+
+    cEl.querySelectorAll("[data-licounter]").forEach(function (btn) {
+      btn.onclick = function () {
+        var id = btn.getAttribute("data-licounter");
+        var delta = parseInt(btn.getAttribute("data-delta"), 10);
+        dc[id] = Math.max(0, (dc[id] || 0) + delta);
+        saveLiState();
+        renderLiScoreboard();
+      };
+    });
+
+    var noteInp = document.getElementById("liDailyNote");
+    if (noteInp) {
+      noteInp.value = liState.notes[tk] || "";
+      noteInp.oninput = function () {
+        liState.notes[tk] = noteInp.value;
+        saveLiState();
+      };
+    }
+  }
+
+  function renderLinkedinDay(dayKey) {
+    activeLiDay = dayKey;
+    document.querySelectorAll(".li-day-tab").forEach(function (tab) {
+      tab.classList.toggle("active", tab.getAttribute("data-liday") === dayKey);
+    });
+
+    var container = document.getElementById("liDayContent");
+    var day = LINKEDIN_DAYS[dayKey];
+    if (!container || !day) return;
+
+    var savedChecks = JSON.parse(localStorage.getItem(day.checklistId) || "{}");
+
+    var checklistHtml = '<div class="li-card">' +
+      '<h3>&#x2705; ' + esc(day.title) + ' &middot; Daily Execution Checklist</h3>' +
+      '<p style="color:var(--muted);font-size:0.88rem;margin:0;">' + esc(day.goal) + '</p>' +
+      '<div class="li-checklist">' +
+      day.tasks.map(function (tsk) {
+        var isChecked = !!savedChecks[tsk.id];
+        return '<label class="li-check-label ' + (isChecked ? 'is-checked' : '') + '">' +
+          '<input type="checkbox" data-cid="' + tsk.id + '" ' + (isChecked ? 'checked' : '') + '> ' +
+          '<span>' + esc(tsk.text) + '</span>' +
+        '</label>';
+      }).join("") +
+      '</div></div>';
+
+    var stepsHtml = '<div class="li-card">' +
+      '<h3>&#x1F4CB; Step-by-Step Tactical Instructions &amp; Ready-to-Post Copy</h3>' +
+      '<div class="li-step-grid">' +
+      day.steps.map(function (st, idx) {
+        var actions = '';
+        if (st.copyText) {
+          actions = '<div style="display:flex;justify-content:flex-end;margin-top:6px;">' +
+            '<button type="button" class="copy-btn" data-cidx="' + idx + '">&#x1F4CB; Copy to Clipboard</button>' +
+          '</div>';
+        }
+        return '<div class="li-step-item">' +
+          '<div class="li-step-head">' +
+            '<span class="li-step-title">' + esc(st.title) + '</span>' +
+            '<span class="li-time-tag">' + st.time + '</span>' +
+          '</div>' +
+          '<p style="color:var(--muted);font-size:0.86rem;margin:0;">' + esc(st.desc) + '</p>' +
+          (st.copyText ? '<div class="li-code-block">' + esc(st.copyText) + '</div>' : '') +
+          (st.snippet ? '<div class="li-code-block">' + esc(st.snippet) + '</div>' : '') +
+          actions +
+        '</div>';
+      }).join("") +
+      '</div></div>';
+
+    var toolsHtml = '';
+    if (dayKey === "tools") {
+      toolsHtml = '<div class="li-card">' +
+        '<h3>&#x270D;&#xFE0F; Live 200-Character Outbound Invite Tester</h3>' +
+        '<div class="li-tool-box">' +
+          '<label style="font-family:var(--font-mono);font-size:0.82rem;font-weight:600;color:var(--fg);">' +
+            'Test your LinkedIn connection request note (200 char hard limit):' +
+          '</label>' +
+          '<textarea id="liNoteTester" rows="3" placeholder="Paste or write your note here..." style="font-family:var(--font-body);padding:10px;border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--bg);color:var(--fg);width:100%;resize:vertical;">Loved your recent update on your studio\'s workflow. Building interactive 3D web systems and local booking engines here in India. Would love to follow along with your journey!</textarea>' +
+          '<div class="li-char-bar">' +
+            '<span>Formula: {Context} + {Who you are in 1 line} + {No ask}</span>' +
+            '<span id="liCharCount" class="counter safe">174 / 200 chars</span>' +
+          '</div>' +
+        '</div></div>';
+    }
+
+    container.innerHTML = checklistHtml + stepsHtml + toolsHtml;
+
+    container.querySelectorAll('.li-checklist input[type="checkbox"]').forEach(function (cb) {
+      cb.onchange = function () {
+        var cid = cb.getAttribute("data-cid");
+        savedChecks[cid] = cb.checked;
+        localStorage.setItem(day.checklistId, JSON.stringify(savedChecks));
+        cb.parentElement.classList.toggle("is-checked", cb.checked);
+      };
+    });
+
+    container.querySelectorAll(".copy-btn").forEach(function (btn) {
+      btn.onclick = function () {
+        var idx = parseInt(btn.getAttribute("data-cidx"), 10);
+        var targetText = day.steps[idx].copyText;
+        copyLiText(targetText, day.steps[idx].title);
+      };
+    });
+
+    var noteTester = document.getElementById("liNoteTester");
+    var charCount = document.getElementById("liCharCount");
+    if (noteTester && charCount) {
+      function updateCharCount() {
+        var len = noteTester.value.length;
+        charCount.textContent = len + " / 200 chars";
+        if (len <= 200) {
+          charCount.className = "counter safe";
+        } else {
+          charCount.className = "counter over";
+        }
+      }
+      noteTester.oninput = updateCharCount;
+      updateCharCount();
+    }
+  }
+
+  function renderLiContentCalendar() {
+    var pEl = document.getElementById("liPillarGrid");
+    if (pEl) {
+      pEl.innerHTML = LI_PILLARS.map(function (p) {
+        return '<div class="pillar-card">' +
+          '<div class="pillar-card-head">' +
+            '<span class="pillar-name">' + esc(p.name) + '</span>' +
+            '<span class="chip ' + p.tag + '">' + p.pct + '</span>' +
+          '</div>' +
+          '<div style="font-size:0.84rem;color:var(--muted);line-height:1.45;">' + esc(p.desc) + '</div>' +
+        '</div>';
+      }).join("");
+    }
+
+    var cEl = document.getElementById("liCalendarGrid");
+    if (cEl) {
+      cEl.innerHTML = LI_CALENDAR_DAYS.map(function (d, idx) {
+        var isToday = idx === 0;
+        return '<div class="cal-day-card' + (isToday ? ' is-today' : '') + '">' +
+          '<div class="cal-day-head">' +
+            '<span>' + d.day + ' &middot; ' + d.date + '</span>' +
+            (isToday ? '<span class="chip cat-linkedin">TODAY</span>' : '') +
+          '</div>' +
+          '<div style="font-weight:700;font-size:0.95rem;color:var(--fg);">' + esc(d.theme) + '</div>' +
+          '<div style="font-size:0.78rem;font-family:var(--font-mono);color:var(--muted);">' + d.type + '</div>' +
+          '<div style="font-size:0.82rem;color:var(--fg);background:var(--surface);border:1px solid var(--line-subtle);padding:6px;border-radius:4px;flex:1;">' + esc(d.hook) + '</div>' +
+          '<div style="display:flex;justify-content:flex-end;">' +
+            '<span class="cal-pillar-badge chip cat-audit">' + d.pillar + '</span>' +
+          '</div>' +
+        '</div>';
+      }).join("");
+    }
+  }
+
+  function renderLiSprintRoadmap() {
+    var sEl = document.getElementById("liRoadmapStats");
+    if (sEl) {
+      sEl.innerHTML = '<div class="stat-card"><div class="k">Sprint Runway</div><div class="v">50 Days</div><div class="sub">Oct 9 – Nov 30</div></div>' +
+        '<div class="stat-card"><div class="k">Reach Goal</div><div class="v" style="color:var(--linkedin);">1,000,000</div><div class="sub">Organic impressions</div></div>' +
+        '<div class="stat-card"><div class="k">Follower Goal</div><div class="v" style="color:var(--success);">10,000</div><div class="sub">High-affinity ICP</div></div>' +
+        '<div class="stat-card"><div class="k">Daily Velocity</div><div class="v">20k/day</div><div class="sub">Pace to target</div></div>';
+    }
+
+    var mEl = document.getElementById("liMilestoneList");
+    if (mEl) {
+      mEl.innerHTML = LI_ROADMAP_PHASES.map(function (ph) {
+        return '<li class="milestone-item">' +
+          '<div class="milestone-date">' + ph.week + '<br><small>' + ph.date + '</small></div>' +
+          '<div class="milestone-content">' +
+            '<b>' + ph.target + '</b>' +
+            '<span>' + esc(ph.desc) + '</span>' +
+          '</div>' +
+        '</li>';
+      }).join("");
+    }
+  }
+
+  function renderLiMetrics() {
+    var sEl = document.getElementById("liMetricsStats");
+    if (sEl) {
+      sEl.innerHTML = '<div class="stat-card"><div class="k">Reach Horizon</div><div class="v" style="color:var(--linkedin);">1M</div><div class="sub">Target impressions</div></div>' +
+        '<div class="stat-card"><div class="k">Follower Goal</div><div class="v" style="color:var(--success);">10K</div><div class="sub">Network expansion</div></div>' +
+        '<div class="stat-card"><div class="k">Target Conversion</div><div class="v">8.2%</div><div class="sub">Profile view to follow</div></div>' +
+        '<div class="stat-card"><div class="k">Avg Post Dwell</div><div class="v">52s</div><div class="sub">Target on carousels</div></div>';
+    }
+
+    var spEl = document.getElementById("liSparklines");
+    if (spEl) {
+      spEl.innerHTML = '<div class="stat-card">' +
+          '<div class="k">Impression Velocity</div>' +
+          '<div class="v" style="font-size:1.3rem;">+14.2k / day</div>' +
+          '<svg viewBox="0 0 100 28" style="width:100%;height:32px;margin-top:6px;"><path d="M0 24 Q 25 20, 50 14 T 100 4" fill="none" stroke="var(--linkedin)" stroke-width="2.5"/></svg>' +
+        '</div>' +
+        '<div class="stat-card">' +
+          '<div class="k">Follower Trajectory</div>' +
+          '<div class="v" style="font-size:1.3rem;">+185 / day</div>' +
+          '<svg viewBox="0 0 100 28" style="width:100%;height:32px;margin-top:6px;"><path d="M0 25 Q 30 18, 60 12 T 100 2" fill="none" stroke="var(--success)" stroke-width="2.5"/></svg>' +
+        '</div>' +
+        '<div class="stat-card">' +
+          '<div class="k">Outbound Accept Rate</div>' +
+          '<div class="v" style="font-size:1.3rem;">46.8%</div>' +
+          '<svg viewBox="0 0 100 28" style="width:100%;height:32px;margin-top:6px;"><path d="M0 20 Q 35 15, 70 8 T 100 6" fill="none" stroke="var(--accent)" stroke-width="2.5"/></svg>' +
+        '</div>';
+    }
+
+    var chEl = document.getElementById("liCumulativeChart");
+    if (chEl) {
+      chEl.innerHTML = '<svg viewBox="0 0 600 200" style="width:100%;height:auto;display:block;">' +
+        '<line x1="50" y1="20" x2="50" y2="160" stroke="var(--line)" stroke-width="1"/>' +
+        '<line x1="50" y1="160" x2="570" y2="160" stroke="var(--line)" stroke-width="1"/>' +
+        '<line x1="50" y1="90" x2="570" y2="90" stroke="var(--line-subtle)" stroke-dasharray="4"/>' +
+        '<line x1="50" y1="20" x2="570" y2="20" stroke="var(--line-subtle)" stroke-dasharray="4"/>' +
+        '<text x="40" y="165" font-family="var(--font-mono)" font-size="11" fill="var(--muted)" text-anchor="end">0</text>' +
+        '<text x="40" y="95" font-family="var(--font-mono)" font-size="11" fill="var(--muted)" text-anchor="end">500k</text>' +
+        '<text x="40" y="25" font-family="var(--font-mono)" font-size="11" fill="var(--muted)" text-anchor="end">1.0M</text>' +
+        '<text x="50" y="180" font-family="var(--font-mono)" font-size="11" fill="var(--muted)">Oct 9</text>' +
+        '<text x="180" y="180" font-family="var(--font-mono)" font-size="11" fill="var(--muted)">Oct 22</text>' +
+        '<text x="310" y="180" font-family="var(--font-mono)" font-size="11" fill="var(--muted)">Nov 5</text>' +
+        '<text x="440" y="180" font-family="var(--font-mono)" font-size="11" fill="var(--muted)">Nov 19</text>' +
+        '<text x="560" y="180" font-family="var(--font-mono)" font-size="11" fill="var(--muted)">Nov 30</text>' +
+        '<path d="M 50 160 Q 250 145, 400 90 T 570 20" fill="none" stroke="var(--linkedin)" stroke-width="3.5"/>' +
+        '<path d="M 50 160 L 570 20" fill="none" stroke="var(--muted)" stroke-dasharray="4" stroke-width="1.5" opacity="0.6"/>' +
+        '<circle cx="570" cy="20" r="5" fill="var(--linkedin)"/>' +
+        '<text x="560" y="14" font-family="var(--font-mono)" font-size="11" font-weight="700" fill="var(--linkedin)" text-anchor="end">1M TARGET</text>' +
+      '</svg>';
+    }
+  }
+
+  function renderLiCouncil() {
+    var cEl = document.getElementById("liAgentGrid");
+    if (cEl) {
+      cEl.innerHTML = LI_COUNCIL_AGENTS.map(function (ag) {
+        return '<div class="agent-card">' +
+          '<div class="agent-card-head">' +
+            '<span class="agent-num">' + ag.num + '</span>' +
+            '<div>' +
+              '<div class="agent-name">' + esc(ag.name) + '</div>' +
+              '<div style="font-family:var(--font-mono);font-size:0.74rem;color:var(--linkedin);">' + esc(ag.role) + '</div>' +
+            '</div>' +
+          '</div>' +
+          '<div class="agent-desc">' + esc(ag.desc) + '</div>' +
+        '</div>';
+      }).join("");
+    }
+  }
+
+  function initLinkedinEngine() {
+    document.querySelectorAll(".li-subnav-btn").forEach(function (btn) {
+      btn.onclick = function () {
+        switchLiSubView(btn.getAttribute("data-lisub"));
+      };
+    });
+
+    document.querySelectorAll(".li-day-tab").forEach(function (tab) {
+      tab.onclick = function () {
+        renderLinkedinDay(tab.getAttribute("data-liday"));
+      };
+    });
+
+    var jumpBtn = document.getElementById("jumpToCalLiBtn");
+    if (jumpBtn) {
+      jumpBtn.onclick = function () {
+        switchView("schedule");
+        setTimeout(function () {
+          var blocks = document.querySelectorAll(".block.cat-linkedin");
+          if (blocks.length > 0) {
+            blocks[0].scrollIntoView({ behavior: "smooth", block: "center" });
+            blocks[0].style.outline = "3px solid var(--linkedin)";
+            setTimeout(function () { blocks[0].style.outline = ""; }, 2500);
+          }
+        }, 150);
+      };
+    }
+
+    renderLiTasks();
+    renderLiScoreboard();
+    renderLinkedinDay(activeLiDay);
+  }
+
+
   render();
+  initLinkedinEngine();
   switchView(currentView);
   initSync();
 })();
